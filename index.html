@@ -1,23 +1,233 @@
----
-layout: default
----
+<head>
+	<style>
+		body {
+    		width: 1050px;
+    		margin: 0 auto;
+		}
+		details > summary {
+			outline:none;
+		}
+		details summary::-webkit-details-marker {
+  			display:none;
+		}
+		figcaption {
+  			text-align: left;
+  			font-style: oblique;
+		}
+	</style>
 
-<div class="home">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha256-yYfngbEKv4RENfGDvNUqJTqGFcKf31NJEe9OTnnMH3Y=" crossorigin="anonymous"></script>
+</head>
 
-  <h1 class="page-heading">Posts</h1>
+<table cols="3">
+	<tbody>
+		<tr>
+			<td width="-50">
+				&nbsp;</td>
+			<th>
+					<img height="400" src="with_sam.jpeg">
+					<figcaption>between Bellevue and Seattle (credit: Sam)</figcaption>
+			</th>
+			<td width="100">
+				&nbsp;</td>
+			<td width="0">
+				<h1>
+					Nathaniel Bottman</h1>
+				<br />
+				last name -- usc.edu<br />
+				&nbsp;</td>
+			<td width="100">
+			<th>
+					<img height="325" src="nate_waterfall.jpg">
+					<figcaption>waterfall near Ithaca, NY (credit: Karola)</figcaption>
+			</th>
+		</tr>
+	</tbody>
+</table>
+<p>
+	Welcome! I am an Assistant Professor (non-tenure track; postdoctoral position) at the University of Southern California.
+</p>
+<p>
+	From July 1, 2019 through June 30, 2022, I am partially supported by NSF Standard Grant <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1906220">DMS-1906220</a>, whose project description you can find <a href="docs/NSF_2019_description.pdf">here</a>.
+</p>
+<p>
+	I study symplectic geometry.
+	My research aims to relate Fukaya categories of different symplectic manifolds.
+	Have a look at my <a href="docs/cv.pdf">vita</a>!
+	You can also look at my <a href="docs/thesis.pdf">thesis</a>; &sect;2 resp. &sect;3 became papers 3 resp. 4 below, but &sect;1 contains some structural comments on the symplectic \((A_\infty,2)\)-category that have not appeared elsewhere.
+</p>
+<h3>Forthcoming publications (click text for abstracts, here and below; "**" indicates undergraduate coauthor)</h3>
+<p>
+	<details>
+	<summary>
+	<b>10:</b> <u>The 2-associahedra are Eulerian lattices</u>. Nathaniel Bottman, Dylan Mavrides**.
+	In preparation; expected early October 2019.
+	</summary>
+	<p>We show that the 2-associahedra are Eulerian lattices, by exploiting their recursive structure.</p>
+	</details>
+</p>
+<h3>Symplectic geometry publications</h3>
+<p>
+	<details>
+	<summary>
+	<b>9:</b> <a href="https://arxiv.org/abs/1910.02037">A compactification of the moduli space of marked vertical lines in \(\mathbb{C}^2\)</a> (2019). Nathaniel Bottman, Alexei Oblomkov.
+	Preprint; 37pp.
+	</summary>
+	<p>For \(r \geq 1\) and \(\mathbf{n} \in
+	\mathbb{Z}_{\geq0}^r\setminus\{\mathbf{0}\}\), we construct a proper complex
+	variety \(\overline{2M}_{\mathbf{n}}\). \(\overline{2M}_{\mathbf{n}}\) is locally
+	toric, and it is equipped with a forgetful map \(\overline{2M}_{\mathbf{n}} \to
+	\overline M_{0,r+1}\). This space is a compactification of \(2M_{\mathbf{n}}\),
+	the configuration space of marked vertical lines in \(\mathbb{C}^2\) up to
+	translations and dilations. In the appendices, we give several examples and
+	show how the stratification of \(\overline{2M}_{\mathbf{n}}\) can be used to
+	recursively compute its virtual Poincar&eacute; polynomial.</p>
+	</details>
+</p>
+<p>
+	<details>
+	<summary>
+	<b>8:</b> <a href="https://arxiv.org/abs/1811.05442">\((A_\infty,2)\)-categories and relative \(2\)-operads</a> (2018). Nathaniel Bottman, Shachar Carmeli. 13pp; submitted to <i>Higher Structures</i>.
+	</summary>
+	<p>We define the notion of a 2-operad relative to an operad, and prove that the 2-associahedra form a relative 2-operad over the associahedra.
+	Using this structure, we define the notions of an \((A_\infty,2)\)-category and \((A_\infty,2)\)-category in spaces and in chain complexes over a ring.
+	Finally, we show that for any continuous map \(A\to X\), we can associate an \((A_\infty,2)\)-space \(\theta(A\to X)\), which specializes to \(\theta(\text{pt}\to X) = \Omega^2X\) and \(\theta(A \to \text{pt}) = \Omega A\times\Omega A\).</p>
+	</details>
+</p>
+<p>
+	<details>
+	<summary>
+	<b>7:</b> <a href="https://arxiv.org/abs/1808.07506">Explicit constructions of quilts associated to symplectic reductions</a> (2018). Nathaniel Bottman. Accepted (2019), <i>Kyoto Journal of Mathematics</i>; 9pp.</b>
+	</summary>
+	<p>If \(G\) is a Lie group acting in a Hamiltonian fashion on a symplectic manifold \(M\), we may form the symplectic quotient \(M/\!/G\).
+	Associated to this situation is a Lagrangian correspondence \(\Lambda_G\) from \(M/\!/G\) to \(M\).
+	In this short paper, we construct in two related examples quilts with seam condition given by such a correspondence \(\Lambda_G\), in the case of \(S^1\) acting on \(\mathbb{CP}^2\) with symplectic quotient \(\mathbb{CP}^2/\!/S^1 = \mathbb{CP}^1\).
+	First, we study the quilted strips that would, if not for figure eight bubbling, identify the Floer chain group \(CF(\gamma,S^1_{\text{Cl}})\) and \(CF(\mathbb{RP}^2,T^2_{\text{Cl}})\), where \(\gamma\) is the connected double-cover of \(\mathbb{RP}^1\).
+	Second, we produce a figure eight bubble that was predicted by Akveld&ndash;Cannas da Silva&ndash;Wehrheim.
+	The figure eight bubbles we construct in this paper are the first concrete examples of this bubbling phenomenon, which is of key importance to functoriality for the Fukaya category.</p>
+	</details>
+</p>
+<p>
+	<details>
+	<summary>
+	<b>6:</b> <a href="https://arxiv.org/abs/1712.01194">Moduli spaces of witch curves topologically realize the 2-associahedra</a>. Nathaniel Bottman. Accepted (2018), <i>Journal of Symplectic Geometry</i>; 21pp.
+	</summary>
+	<p>	For \(r \geq 1\) and \(\mathbf{n} \in \mathbb{Z}_{\geq0}^r\), I construct the compactified moduli space \(\overline{2\mathcal{M}}_{\mathbf{n}}\) of witch curves of type \(\mathbf{n}\). These are the domain moduli spaces for witch balls, analogous to the domain moduli spaces \(\overline{\mathcal{M}}_r\) for pseudoholomorphic polygons.
+	I equip \(\overline{2\mathcal{M}}_{\mathbf{n}}\) with a stratification by the 2-associahedron \(W_{\mathbf{n}}\), and prove that \(\overline{2\mathcal{M}}_{\mathbf{n}}\) is compact, second-countable, and metrizable.
+	In addition, I show that the forgetful map \(\overline{2\mathcal{M}}_{\mathbf{n}} \to \overline{\mathcal{M}}_r\) to the moduli space of stable disk trees is continuous and respects the stratifications.</p>
+	</details>
+</p>
+<p>
+	<details>
+	<summary>
+	<b>5:</b> <a href="https://arxiv.org/abs/1410.3834">Pseudoholomorphic quilts with figure eight singularity</a>. Nathaniel Bottman.
+	To appear in <i>Journal of Symplectic Geometry</i> 18 (2020), no. 1; 34pp.
+	</summary>
+	<p>I show that the novel figure eight singularity in a pseudoholomorphic quilt can be continuously removed when composition of Lagrangian correspondences is cleanly immersed.
+	The proof of this result requires a collection of width-independent elliptic estimates that allow for non-standard complex structures on the domain.</p>
+	</details>
+</p>
+<p>
+	<details>
+	<summary>
+	<b>4:</b> <a href="https://arxiv.org/abs/1709.00119">2-associahedra.</a> Nathaniel Bottman. <i>Algebraic &amp; Geometric Topology</i> 19 (2019), no. 2, 743&ndash;806.
+	</summary>
+	<p>For any \(r\geq 1\) and \(\mathbf{n} \in \mathbb{Z}_{\geq0}^r\setminus\{\mathbf0\}\) I construct a poset \(W_{\mathbf{n}}\) called a 2-associahedron.
+	The 2-associahedra arose in symplectic geometry, where they are expected to control maps between Fukaya categories of different symplectic manifolds.
+	I prove that the completion of \(W_{\mathbf{n}}\) is an abstract polytope of dimension \(|\mathbf{n}|+r-3\).
+	There are forgetful maps \(W_{\mathbf{n}}\to K_r\), where \(K_r\) is the \((r−2)\)-dimensional associahedron, and the 2-associahedra specialize to the associahedra (in two ways) and to the multiplihedra.
+	In an appendix, I work out the 2- and 3-dimensional 2-associahedra in detail.</p>
+	</details>
+</p>
+<p>
+	<details>
+	<summary>
+	<b>3:</b> <a href="https://arxiv.org/abs/1503.03486">Gromov compactness for squiggly strip shrinking in pseudoholomorphic quilts.</a> Nathaniel Bottman, Katrin Wehrheim. <i>Selecta Mathematica</i> (2018) 24, pp. 3381&ndash;3443.
+	</summary>
+	<p>
+	We establish a Gromov compactness theorem for strip shrinking in pseudoholomorphic quilts when composition of Lagrangian correspondences is immersed.
+	In particular, we show that figure eight bubbling occurs in the limit, argue that this is a codimension-0 effect, and predict its algebraic consequences &mdash; geometric composition extends to a curved \(A_\infty\)-bifunctor, in particular the associated Floer complexes are isomorphic after a figure eight correction of the bounding cochain.
+	An appendix with Felix Schm&auml;schke provides examples of nontrivial figure eight bubbles.</p>
+	</details>
+</p>
+<!-- <p>
+	<details>
+	<summary>
+	<b>&bull;</b> <a href="docs/thesis.pdf">Pseudoholomorphic quilts with figure eight singularity</a>. Nathaniel Bottman. Thesis, MIT (2015); 109pp.
+	</summary>
+	<p>In this thesis, I prove several results toward constructing a machine that turns Lagrangian correspondences into \(A_\infty\)-functors between Fukaya categories. The core of this construction is pseudoholomorphic quilts with figure eight singularity.
+	<br><br>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	In the first part, I propose a blueprint for constructing an algebraic object that binds together the Fukaya categories of many different symplectic manifolds. I call this object the "symplectic \(A_\infty\)-2-category Symp". The key to defining the structure maps of Symp is the figure eight bubble.
+	<br><br>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+	In the second part, I establish a collection of strip-width-independent elliptic estimates. The key is function spaces which augment the Sobolev norm with another term, so that the norm of a product can be bounded by the product of the norms in a manner which is independent of the strip-width. Next, I prove a removable singularity theorem for the figure eight singularity. Using the Gromov compactness theorem mentioned in the following paragraph, I adapt an argument of Abbas&ndash;Hofer to uniformly bound the norm of the gradient of the maps in cylindrical coordinates centered at the singularity. I conclude by proving a "quilted" isoperimetric inequality.
+	<br><br>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+	In the third part, which is joint with Katrin Wehrheim, I use my collection of estimates to prove a Gromov compactness theorem for quilts with a strip of (possibly non-constant) width shrinking to zero. This features local \(C^\infty\)-convergence away from the points where energy concentrates. At such points, we produce a nonconstant quilted sphere.</p>
+	</details>
+</p> -->
+<h3>Older publication, in nonlinear waves</h3>
+<p>
+	<details>
+	<summary>
+	<b>2:</b> <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.364.3522&rep=rep1&type=pdf">Elliptic solutions of the defocusing NLS equation are stable</a>. Nathaniel Bottman, Bernard Deconinck, Michael Nivala. <i>J. Phys. A</i> 44 (2011), no. 28, 24pp.
+	</summary>
+	<p>
+	The stability of the stationary periodic solutions of the integrable (one-dimensional, cubic) defocusing nonlinear Schrodinger (NLS) equation is reasonably well understood, especially for solutions of small amplitude.
+	In this paper, we exploit the integrability of the NLS equation to establish the spectral stability of all such stationary solutions, this time by explicitly computing the spectrum and the corresponding eigenfunctions associated with their linear stability problem.
+	An additional argument using an appropriate Krein signature allows us to conclude the (nonlinear) orbital stability of all stationary solutions of the defocusing NLS equation with respect to so-called subharmonic perturbations: perturbations that have period equal to an integer multiple of the period of the amplitude of the solution.
+	All results presented here are independent of the size of the amplitude of the solutions and apply equally to solutions with trivial and nontrivial phase profiles.
+	</p>
+	</details>
+</p>
+<p>
+	<details>
+	<summary>
+	<b>1: </b> <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.364.5043&rep=rep1&type=pdf">KdV cnoidal waves are spectrally stable</a>. Nathaniel Bottman, Bernard Deconinck. <i>Discrete Contin. Dyn. Syst. A</i> 25 (2009), no. 4, 1163&ndash;1180.
+	</summary>
+	<p>
+	Going back to considerations of Benjamin (1974), there has been significant interest in the question of stability for the stationary periodic solutions of the Korteweg-deVries equation, the so-called cnoidal waves.
+	In this paper, we exploit the squared-eigenfunction connection between the linear stability problem and the Lax pair for the Korteweg-deVries equation to completely determine the spectrum of the linear stability problem for perturbations that are bounded on the real line.
+	We find that this spectrum is confined to the imaginary axis, leading to the conclusion of spectral stability.
+	An additional argument allows us to conclude the completeness of the associated eigenfunctions.
+	</p>
+	</details>
+</p>
+<h3>Notes</h3>
+<p>
+	<details>
+	<summary>
+	&bull;&nbsp; <a href="docs/new_setup_for_Wn.pdf">A new approach to Symp</a>. Nathaniel Bottman.
+	</summary>
+	<p>
+	In this note, I show that a linear \((A_\infty,2)\)-algebra \(A\) induces an \(A_\infty\)-structure on the bar complex \(TA[1]\).
+	</p>
+	</details>
+</p>
+<h3>Code</h3>
+<p>
+	Check out <a href="https://github.com/natebottman/complex-2associahedra">complex-2associahedra</a>, a repository whose main point is a Python script that computes virtual Poincare polynomials of complex 2-associahedra.
+	This is in support of my paper 9 with Alexei Oblomkov.
+<!--
+<h3>
+	Seminars</h3>
+<p>
+	I help co-organize the Joint IAS/PU Symplectic Geometry Seminar.</p>
+<h3>
+	Past teaching</h3>
+<p>
+	<i>At Northeastern</i></p>
+<p>
+	Spring 2016: Instructor for MATH 5122, Geometry I (graduate course on manifolds).
+	Fall 2015: Instructor for two sections of MATH 2321, multivariable calculus for engineers.
+	</p>
+<p>
+	<i>At MIT</i></p>
+<p>
+	Fall 2013: Recitation Instructor for 18.01A/02A (single- and multivariable calculus).
+<h3>
+	Past conferences</h3>
+<p>
+	</p>
+-->

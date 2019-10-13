@@ -1,0 +1,227 @@
+.cf:before, .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    padding-top: 0;
+    margin-top: 0;
+    background-color: #ffffff;
+}
+
+body.withjs {
+    padding-top: 205px;
+}
+
+#header {
+    background-color: #ffffff;
+    font-family:   "News Cycle", "Arial Narrow", Impact, sans-serif;
+    font-weight: bold;
+    border-bottom: 2px dotted #dddddd;
+}
+
+.section p {
+    margin-left: 2em;
+}
+
+#header.withjs {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    overflow: visible; 
+}
+
+#header a {
+    float: left;
+    color: #000000;
+}
+
+#header a.current {
+    color: #0000bb
+}
+
+#header a:hover {
+    color: #0000bb;
+}
+
+#header .container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.contact {
+/*    float: right;*/
+}
+
+#header p.contact {
+/*    float: left;*/
+    display: inline-block;
+    width: 40%;
+    margin: 12px 1.2em 12px 1.2em;
+    line-height: 1.5em;
+}
+#header h1 {
+    margin: 12px 0 12px 0;
+    padding: 0.538em 0 0 0;
+    font-size: 2.6em;
+    line-height: 1.192em;
+    float: left;
+}
+#header h1 a {
+    color: #000000;
+}
+
+h2 {
+    font-size: 1.52em;
+    font-family:   "News Cycle", "Arial Narrow", Impact, sans-serif;    
+}
+
+#header ul {
+    margin: 12px 0 12px 0;
+    display: block;
+    float: left;
+    padding: 0px 0 0 10px;
+    min-width: 19em;
+    width: 70%;
+}
+#header li {
+    display: block;
+    float: left;
+    text-align: center;
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 1.52em;
+    line-height: 1.32em;
+    padding-top: 1.62em;
+}
+
+.main {
+    width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 133%;
+    color: #222222;
+}
+
+.pic {
+    float: right;
+    margin-left: 2em;
+}
+
+.paperlist {
+    margin: 0.5em 0.5em 0.5em 2em;
+}
+
+.titleline a {
+    float: right;
+}
+
+.publishline {
+    margin-top: 0.2em;
+}
+
+.title {
+    font-size: 1.15em;
+}
+
+.paperlist a:link {
+    color: #e06030;
+}
+
+.paperlist a:visited {
+    color: #a03000;
+}
+
+.paperlist a:hover {
+    color: #ff8020;
+}
+
+.paperlist dt {
+    margin: 0.8em 0 0.2em 0;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    background-color: #dde0ff;
+    border-radius: 8px;
+}
+
+.paperlist dt.hovered {
+    background-color: #eeeaff;
+}
+
+
+.paperlist dd {
+    margin: 0 0.5em 0 2em;
+}
+.paperlist dd.hidden {
+    display: none;
+}
+
+
+.paperlist dd p:first-child {
+    margin-top: 0.25em;
+}
+
+
+.teaching p {
+    margin: 0;
+    margin-left: 2em;
+}
+.teaching p.instr {
+}
+.teaching h3 {
+    font-family:   "News Cycle", "Arial Narrow", Impact, sans-serif;    
+    font-size: 1.2em;
+    margin: 0.1em;
+    margin-top: 0.3em;
+}
+
+blockquote {
+    color: #444444;
+/*    line-height: 1.45;*/
+    font-style: italic;
+    position: relative;
+    margin: 1em 3em 1em 3em;
+}
+
+/*blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 6em;
+    position: absolute;
+    left: -0.5em;
+    top: 0.2em;
+    color: #808080;
+}*/
+
+/*blockquote:after {
+    display: block;
+    content: "\201D";
+    font-size: 6em;
+    bottom: -0.28em;
+    right: -0.28em;
+    position: absolute;
+    color: #808080;
+}*/
