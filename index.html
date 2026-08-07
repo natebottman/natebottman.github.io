@@ -1,414 +1,431 @@
-
-<!-- saved from url=(0035)https://www.math.brown.edu/~mtchan/ -->
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
- 	<title>Nathaniel Bottman</title>
-	<style type="text/css">
-		details > summary {
-			outline:none;
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Nathaniel Bottman</title>
+	<style>
+		* { box-sizing: border-box; }
+		body {
+			margin: 0; background: #ffffff; color: #333;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+			font-size: 15.5px; line-height: 1.6;
 		}
-		details summary::-webkit-details-marker {
-  			display:none;
+		.page { max-width: 880px; margin: 0 auto; padding: 48px 24px 80px; }
+		a { color: #1772d0; text-decoration: none; }
+		a:hover { color: #f09228; }
+		.hero { display: flex; gap: 40px; align-items: flex-start; }
+		.hero-text { flex: 1; }
+		h1 { font-size: 34px; font-weight: 400; margin: 0 0 18px; color: #000; }
+		.hero-photo { width: 200px; flex-shrink: 0; text-align: center; }
+		.hero-photo img { width: 175px; height: 175px; border-radius: 50%; object-fit: cover; }
+		.hero-links { margin-top: 14px; font-size: 14px; }
+		.hero-links a { white-space: nowrap; }
+		.hero-email { margin-top: 8px; font-size: 13.5px; color: #777; }
+		h2 { font-size: 22px; font-weight: 500; color: #000; margin: 44px 0 6px; border-bottom: 1px solid #e6e6e6; padding-bottom: 8px; }
+		h3.subhead { font-size: 16.5px; font-weight: 600; color: #444; margin: 30px 0 2px; }
+		.note { font-size: 13px; color: #888; font-style: italic; margin-bottom: 6px; }
+		.pub { display: flex; gap: 24px; padding: 14px 0; }
+		.thumb { width: 150px; flex: 0 0 150px; }
+		.thumb img {
+			width: 100%; border: 1px solid #e8eaed; border-radius: 8px;
+			background: #fff; padding: 6px; transition: box-shadow .15s ease;
 		}
-		p.serif{font-family:"Georgia","Times New Roman",Times,serif;}
-		p.sansserif{font-family:Arial,Helvetica,sans-serif;}
-		h3 {font-size:140%;}
-		p {font-size:100%;}
-		h4 {font-size:80%;}
-		ol li {margin-bottom:.25em}
+		.pub:hover .thumb img { box-shadow: 0 3px 10px rgba(0,0,0,.12); }
+		.pub-body { flex: 1; min-width: 0; }
+		.pub-title { font-weight: 600; font-size: 16px; }
+		.pub-title .num { font-weight: 400; color: #999; }
+		.pub-authors { margin-top: 2px; }
+		.pub-authors .me { font-weight: 600; }
+		.pub-venue { font-style: italic; color: #777; font-size: 14px; }
+		details.abs { margin-top: 4px; }
+		details.abs summary {
+			cursor: pointer; display: inline-block; list-style: none;
+			font-size: 13.5px; color: #1772d0; user-select: none;
+		}
+		details.abs summary::-webkit-details-marker { display: none; }
+		details.abs summary::before { content: "\25B8\00A0"; }
+		details.abs[open] summary::before { content: "\25BE\00A0"; }
+		details.abs p { font-size: 14px; color: #555; margin: 6px 0 0; padding-left: 14px; border-left: 2px solid #e8eaed; }
+		ul.plain { padding-left: 22px; margin: 8px 0; }
+		ul.plain li { margin-bottom: 8px; }
+		.footer { margin-top: 60px; font-size: 13px; color: #999; border-top: 1px solid #eee; padding-top: 16px; }
+		@media (max-width: 640px) {
+			.hero { flex-direction: column-reverse; }
+			.hero-photo { align-self: center; }
+			.pub { flex-direction: column; gap: 10px; }
+			.thumb { width: 170px; flex: none; }
+		}
 	</style>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha256-yYfngbEKv4RENfGDvNUqJTqGFcKf31NJEe9OTnnMH3Y=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
 </head>
 
-<body bgcolor="#FFFFFF">
+<body>
+<div class="page">
 
-<table> 
-<tbody><tr height="50"></tr>
+	<div class="hero">
+		<div class="hero-text">
+			<h1>Nathaniel Bottman</h1>
+			<p>I am the CEO and Principal Scientist of Incubilate, where I work on mathematical
+			foundations for reasoning in large language models. My current research is funded by an
+			award from DARPA's <a href="https://www.darpa.mil/research/programs/aiq-artificial-intelligence-quantified">AIQ program</a>,
+			titled &ldquo;An Operad-Based Framework for Deep Learning.&rdquo;</p>
+			<p>From January 2021 until June 2025 I was a Group Leader and Advanced Researcher at the
+			Max Planck Institute for Mathematics in Bonn, Germany.
+			From 2019 to 2020 I was an Assistant Professor (non-tenure track) at the University of
+			Southern California.
+			From 2016 to 2019 I was an NSF Postdoctoral Fellow, with joint appointment at the
+			Institute for Advanced Study and Princeton University.
+			From 2015 to 2016 I was a Postdoctoral Researcher at Northeastern University.
+			I got my PhD from MIT in 2015, advised by
+			<a href="http://math.berkeley.edu/~katrin/">Katrin Wehrheim</a>.
+			From 2019 through 2021, I was supported by NSF Standard Grant
+			<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1906220">DMS-1906220</a>.</p>
+			<p><b><a href="#research">Research</a> &middot; <a href="#teaching">Teaching</a> &middot; <a href="#misc">Miscellaneous</a></b></p>
+		</div>
+		<div class="hero-photo">
+			<img src="pics/headshot.jpg" alt="Nathaniel Bottman">
+			<div class="hero-links">
+				<a href="docs/cv.pdf">CV</a> &nbsp;/&nbsp;
+				<a href="https://scholar.google.com/citations?user=EftJ_I8AAAAJ">Scholar</a> &nbsp;/&nbsp;
+				<a href="https://arxiv.org/a/bottman_n_1">arXiv</a><br>
+				<a href="https://github.com/natebottman">GitHub</a>
+			</div>
+			<div class="hero-email">nate at incubilate dot com</div>
+		</div>
+	</div>
 
-<tr>
-<td width="100"></td>
-<td>
+	<h2 id="research">Research</h2>
+	<p>My current focus is on using operads, the mathematics of many-in, one-out operations and
+	their compositions, to describe, measure, and improve compositional reasoning in LLMs.
+	Before machine learning I worked in symplectic geometry and polytopal combinatorics.
+	Click &ldquo;abstract&rdquo; to expand any abstract.</p>
 
-<table>
-<tbody><tr><td width="300">
-<p><img align="left" src="./pics/waterfall.jpg" style="border: white solid
-5px" width="75%"></p>
-</td>
-<td width="0"></td>
-<td>
+	<h3 class="subhead">Machine learning</h3>
 
-<p><b>Nathaniel Bottman</b></p>
-<br><br>
-nate at incubilate dot com
-</p><p><b>
-<br><a href="#papers">Research</a>
-<!-- <br><a href="#travel">Upcoming travel</a> -->
-<br><a href="#teaching">Teaching</a>
-<br><a href="#misc">Miscellaneous</a>
-</b>
-</p></td>
-</tr>
-</tbody></table>
+	<div class="pub">
+		<div class="thumb"><img src="pics/thumbs/2606.13649.png" alt="Predicted vs. actual accuracy for operadic consistency"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">21.</span> <a href="https://arxiv.org/abs/2606.13649">Operadic consistency: a label-free signal for compositional reasoning failures in LLMs</a> (2026)</div>
+			<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Yinhong Liu, Kyle Richardson</div>
+			<div class="pub-venue">arXiv:2606.13649</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>Detecting LLM reasoning failures at inference time without ground-truth labels has motivated a wide range of confidence baselines, including self-consistency, semantic entropy, and P(True), built on within-question sampling and self-evaluation. Operad theory, the formalism for systems built by iterated substitution, suggests a complementary diagnostic: a model's direct answer to a compositional query should agree with the answer it produces by composing a stated decomposition of the same query. We instantiate this idea as operadic consistency (OC), a per-question signal. Across twelve instruction-tuned LLMs (4B to 671B parameters, open-weights and closed-source) on four multi-hop QA datasets, OC is strongly correlated with accuracy on every dataset (Pearson \(r \in [0.86, 0.94]\), all \(p \leq 0.0004\)), and is the only signal we evaluate with \(r \geq 0.85\) uniformly across all four datasets. Chain-of-thought self-consistency (CoT-SC; Wang et al., 2023) matches OC on HotpotQA and DROP (\(r = 0.93, 0.87\)) but drops to \(r \approx 0.45\) on MuSiQue and StrategyQA. At the per-question level, OC contributes information beyond CoT-SC and semantic entropy on every dataset (cluster-robust \(p \leq 10^{-16}\) for the OC coefficient), and the conclusion is robust to additionally controlling for constructed decomposition-aware baselines (\(p \leq 10^{-13}\)). The same signal yields selective-prediction improvements (accuracy at fixed coverage) over a tuned CoT-SC baseline at the equal-cost \(K = 3\) budget (AUARC lifts of +0.086 to +0.096 and AUROC lifts of +0.092 to +0.164; 95% CIs exclude zero on every cell). On five frontier thinking models, where the decomposition is extracted from the model's own chain of thought, the same equal-cost comparison gives positive selective-prediction point-estimate lift on all 16 (dataset, budget, metric) cells tested, with 95% CIs excluding zero on 12 of the 16.</p>
+			</details>
+		</div>
+	</div>
 
-<!--
-<p><img align="left" src="./pics/examples.jpg" style="border: white solid
-5px" width="100%"></p>
--->
+	<div class="pub">
+		<div class="thumb"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">20.</span> <a href="https://arxiv.org/abs/2606.13634">Operads for compositional reasoning in LLMs</a> (2026)</div>
+			<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Kyle Richardson</div>
+			<div class="pub-venue">arXiv:2606.13634 &middot; To be presented at the Compositional Learning and the Combining Theory and Benchmarks workshops at ICML 2026</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>Question decomposition, i.e. breaking a complex query into simpler sub-queries whose answers are composed to produce a final answer, is a widely used strategy for improving LLM reasoning, yet it currently lacks a rigorous mathematical foundation. In this paper, we propose operads, mathematical structures that model many-in, one-out operations and compositions thereof, as a natural framework for describing question decomposition. We define the questions operad \(Q\), in which operations correspond to question templates and composition corresponds to substitution of sub-answers, and show how QA models can be interpreted as algebras over \(Q\). Beyond reframing existing practice, this operadic perspective points toward new methods, in particular a notion of operadic consistency, which measures whether a QA model's answers agree across the partial collapses of a question decomposition tree. Empirical evaluation of operadic consistency is reported in our companion paper (Bottman, Liu, and Richardson, 2026), which finds it strongly correlated with accuracy across twelve LLMs and four multi-hop QA datasets and outperforming standard temperature-based self-consistency baselines. We argue that operads are the natural mathematical home for question decomposition, and that invariants such as operadic consistency open new directions for analyzing and improving the reliability of multi-step reasoning.</p>
+			</details>
+		</div>
+	</div>
 
-</td></tr><tr height="20"></tr>
-<tr>
-<td width="100" units="pixels"></td>
-<td width="700" units="pixels">
-<p>
-<a name="1"></a>
-</p><p>
-Welcome!
-I am the CEO and Principal Scientist of Incubilate.
-I am currently funded by an award from DARPA's <a href="https://www.darpa.mil/research/programs/aiq-artificial-intelligence-quantified">AIQ program</a>, titled "An Operad-Based Framework for Deep Learning".
+	<div class="pub">
+		<div class="thumb"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">19.</span> <a href="https://arxiv.org/abs/2307.15744">How regularization affects the geometry of loss functions</a> (2023)</div>
+			<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Y. Cooper, Antonio Lerario</div>
+			<div class="pub-venue">arXiv:2307.15744 &middot; 16pp.</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>What neural networks learn depends fundamentally on the geometry of the underlying loss function.
+			We study how different regularizers affect the geometry of this function. One of the most basic geometric properties of a smooth function is whether it is Morse or not.
+			For nonlinear deep neural networks, the unregularized loss function \(L\) is typically not Morse.
+			We consider several different regularizers, including weight decay, and study for which regularizers the regularized function \(L_\epsilon\) becomes Morse.</p>
+			</details>
+		</div>
+	</div>
 
-</p><p>
-From January 2021 until June 2025 I was a Group Leader and Advanced Researcher at the Max Planck Institute for Mathematics in Bonn, Germany.
-From 2019 to 2020 I was an Assistant Professor (non-tenure track) at the University of Southern California.
-From 2016 to 2019 I was an NSF Postdoctoral Fellow, with joint appointment at the Institute for Advanced Study and Princeton University.
-From 2015 to 2016 I was a Postdoctoral Researcher at Northeastern University.
-I got my PhD from MIT in 2015, advised by <a href="http://math.berkeley.edu/~katrin/">Katrin Wehrheim</a>.
+	<h3 class="subhead">Symplectic geometry and combinatorics</h3>
+	<div class="note">* = undergraduate mentee, ** = postdoctoral mentee</div>
 
-<!--
-</p><p>
-I study symplectic geometry, with connections to algebraic geometry and combinatorics.
-My research aims to relate Fukaya categories of different symplectic manifolds.
--->
+	<div class="pub">
+		<div class="thumb"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">18.</span> <a href="https://arxiv.org/abs/2412.18993">On the architecture of the Symplectic \((A_\infty,2)\)-Category</a> (2024)</div>
+			<div class="pub-authors"><span class="me">Nathaniel Bottman</span></div>
+			<div class="pub-venue">arXiv:2412.18993 &middot; 11pp.</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>This note relates to the author's construction of the Symplectic \((A_\infty,2)\)-Category, Symp. Here we explain two ways of encoding the information in 𝖲𝗒𝗆𝗉, one topological, one algebraic. The topological encoding is as an \((A_\infty,2)\)-flow category, which we define here. The algebraic encoding is as a linear \((A_\infty,2)\)-category, which we extract from the topological encoding. In upcoming work, the author and Wehrheim plan to use the adiabatic Fredholm theory recently developed by Bottman-Wehrheim to construct Symp as an \((A_\infty,2)\)-flow category.</p>
+			<p>The definition of linear \((A_\infty,2)\)-category that we give in this note is different than the one proposed by Bottman-Carmeli. The recursive structure of the 2-associahedra identifies faces with fiber products of 2-associahedra over associahedra, and these fiber products led Bottman-Carmeli to associate operations to singular chains on 2-associahedra. The innovation in our new definition of linear \((A_\infty,2)\)-category is to extend the family of 2-associahedra to include all fiber products of 2-associahedra over associahedra. This allows us to associate operations to cellular chains, which in particular enables us to produce a definition that involves only one operation in each arity, governed by a collection of \((A_\infty,2)\)-equations.</p>
+			</details>
+		</div>
+	</div>
 
-</p><p>From 2019 through 2021, I was supported by NSF Standard Grant <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1906220">DMS-1906220</a>.
+	<div class="pub">
+		<div class="thumb"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">17.</span> <a href="https://arxiv.org/abs/2412.01779">Adiabatic Fredholm Theory</a> (2024)</div>
+			<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Katrin Wehrheim</div>
+			<div class="pub-venue">arXiv:2412.01779 &middot; 74pp.</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>We develop a robust functional analytic framework for adiabatic limits. This framework consists of a notion of adiabatic Fredholm family, several possible regularity properties, and an explicit construction that provides finite dimensional reductions that fit into all common regularization theories. We show that these finite dimensional reductions inherit global continuity and differentiability properties from the adiabatic Fredholm family. Moreover, we indicate how to construct adiabatic Fredholm families that describe the adiabatic limits for the nondegenerate Atiyah-Floer conjecture and strip-shrinking in quilted Floer theory.</p>
+			</details>
+		</div>
+	</div>
 
-<!-- </p><p>
-<b>I am on the job market!</b>
-Please have a look at my my <a href="./docs/cv.pdf">CV</a>, my <a href="./docs/research_statement.pdf">research statement</a>, and my profile on <a href="https://scholar.google.com/citations?user=EftJ_I8AAAAJ&hl=en&oi=ao">Google Scholar</a>.
-</p> -->
+	<div class="pub">
+		<div class="thumb"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">16.</span> <a href="https://arxiv.org/abs/2409.10377">The focus-focus addition graph is immersed</a> (2024)</div>
+			<div class="pub-authors">Mohammed Abouzaid, <span class="me">Nathaniel Bottman</span>, Yunpeng Niu</div>
+			<div class="pub-venue">arXiv:2409.10377 &middot; 13pp.</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>For a symplectic 4-manifold \(M\) equipped with a singular Lagrangian fibration with a section, the natural fiberwise addition given by the local Hamiltonian flow is well-defined on the regular points. We prove, in the case that the singularities are of focus-focus type, that the closure of the corresponding addition graph is the image of a Lagrangian immersion in \((M\times M)^- \times M\), and we study its geometry. Our main motivation for this result is the construction of a symmetric monoidal structure on the Fukaya category of such a manifold.</p>
+			</details>
+		</div>
+	</div>
 
-<p>
-<h3>Machine learning research papers (click text for abstracts)</h3>
-<p>
-	<details>
-	<summary>
-	<b>21:</b> <a href="https://arxiv.org/abs/2606.13649">Operadic consistency: a label-free signal for compositional reasoning failures in LLMs</a> (2026).
-	Nathaniel Bottman, Yinhong Liu, Kyle Richardson.
-	</summary>
-	<p>Detecting LLM reasoning failures at inference time without ground-truth labels has motivated a wide range of confidence baselines, including self-consistency, semantic entropy, and P(True), built on within-question sampling and self-evaluation. Operad theory, the formalism for systems built by iterated substitution, suggests a complementary diagnostic: a model's direct answer to a compositional query should agree with the answer it produces by composing a stated decomposition of the same query. We instantiate this idea as operadic consistency (OC), a per-question signal. Across twelve instruction-tuned LLMs (4B to 671B parameters, open-weights and closed-source) on four multi-hop QA datasets, OC is strongly correlated with accuracy on every dataset (Pearson \(r \in [0.86, 0.94]\), all \(p \leq 0.0004\)), and is the only signal we evaluate with \(r \geq 0.85\) uniformly across all four datasets. Chain-of-thought self-consistency (CoT-SC; Wang et al., 2023) matches OC on HotpotQA and DROP (\(r = 0.93, 0.87\)) but drops to \(r \approx 0.45\) on MuSiQue and StrategyQA. At the per-question level, OC contributes information beyond CoT-SC and semantic entropy on every dataset (cluster-robust \(p \leq 10^{-16}\) for the OC coefficient), and the conclusion is robust to additionally controlling for constructed decomposition-aware baselines (\(p \leq 10^{-13}\)). The same signal yields selective-prediction improvements (accuracy at fixed coverage) over a tuned CoT-SC baseline at the equal-cost \(K = 3\) budget (AUARC lifts of +0.086 to +0.096 and AUROC lifts of +0.092 to +0.164; 95% CIs exclude zero on every cell). On five frontier thinking models, where the decomposition is extracted from the model's own chain of thought, the same equal-cost comparison gives positive selective-prediction point-estimate lift on all 16 (dataset, budget, metric) cells tested, with 95% CIs excluding zero on 12 of the 16.</p>
-	</details>
-</p>
-<p>
-	<details>
-	<summary>
-	<b>20:</b> <a href="https://arxiv.org/abs/2606.13634">Operads for compositional reasoning in LLMs</a> (2026).
-	Nathaniel Bottman, Kyle Richardson.
-	To be presented at the Compositional Learning and the Combining Theory and Benchmarks workshops at ICML 2026.
-	</summary>
-	<p>Question decomposition, i.e. breaking a complex query into simpler sub-queries whose answers are composed to produce a final answer, is a widely used strategy for improving LLM reasoning, yet it currently lacks a rigorous mathematical foundation. In this paper, we propose operads, mathematical structures that model many-in, one-out operations and compositions thereof, as a natural framework for describing question decomposition. We define the questions operad \(Q\), in which operations correspond to question templates and composition corresponds to substitution of sub-answers, and show how QA models can be interpreted as algebras over \(Q\). Beyond reframing existing practice, this operadic perspective points toward new methods, in particular a notion of operadic consistency, which measures whether a QA model's answers agree across the partial collapses of a question decomposition tree. Empirical evaluation of operadic consistency is reported in our companion paper (Bottman, Liu, and Richardson, 2026), which finds it strongly correlated with accuracy across twelve LLMs and four multi-hop QA datasets and outperforming standard temperature-based self-consistency baselines. We argue that operads are the natural mathematical home for question decomposition, and that invariants such as operadic consistency open new directions for analyzing and improving the reliability of multi-step reasoning.</p>
-	</details>
-</p>
-<p>
-	<details>
-	<summary>
-	<b>19:</b> <a href="https://arxiv.org/abs/2307.15744">How regularization affects the geometry of loss functions</a> (2023).
-	Nathaniel Bottman, Y. Cooper, Antonio Lerario.
-	16pp.
-	</summary>
-	<p>What neural networks learn depends fundamentally on the geometry of the underlying loss function.
-	We study how different regularizers affect the geometry of this function. One of the most basic geometric properties of a smooth function is whether it is Morse or not.
-	For nonlinear deep neural networks, the unregularized loss function \(L\) is typically not Morse.
-	We consider several different regularizers, including weight decay, and study for which regularizers the regularized function \(L_\epsilon\) becomes Morse.</p>
-	</details>
-</p>
+	<div class="pub">
+		<div class="thumb"><img src="pics/thumbs/2409.03633.png" alt="A 3-dimensional realization of a categorical associahedron"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">15.</span> <a href="https://arxiv.org/abs/2409.03633">Higher-Categorical Associahedra</a> (2024)</div>
+			<div class="pub-authors">Spencer Backman, <span class="me">Nathaniel Bottman</span>, Daria Poliakova**</div>
+			<div class="pub-venue">arXiv:2409.03633 &middot; 143pp.</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>The second author introduced 2-associahedra as a tool for investigating functoriality properties of Fukaya categories, and he conjectured that they could be realized as face posets of convex polytopes. We introduce a family of posets called categorical \(n\)-associahedra, which naturally extend the second author's 2-associahedra and the classical associahedra. Categorical \(n\)-associahedra give a combinatorial model for the poset of strata of a compactified real moduli space of a tree arrangement of affine coordinate subspaces. We construct a family of complete polyhedral fans, called velocity fans, whose coordinates encode the relative velocities of pairs of colliding coordinate subspaces, and whose face posets are the categorical n-associahedra. In particular, this gives the first fan realization of 2-associahedra. In the case of the classical associahedron, the velocity fan specializes to the normal fan of Loday's realization of the associahedron.</p>
+			<p>For proving that the velocity fan is a fan, we first construct a cone complex of metric \(n\)-bracketings and then exhibit a piecewise-linear isomorphism from this complex to the velocity fan. We demonstrate that the velocity fan, which is not simplicial, admits a canonical smooth flag triangulation on the same set of rays, and we describe a second, finer triangulation which provides a new extension of the braid arrangement. We describe piecewise-unimodular maps on the velocity fan such that the image of each cone is a union of cones in the braid arrangement, and we highlight a connection to the theory of building sets and nestohedra. We explore the local iterated fiber product structure of categorical \(n\)-associahedra and the extent to which this structure is realized by the velocity fan. For the class of concentrated \(n\)-associahedra we exhibit generalized permutahedra having velocity fans as their normal fans.</p>
+			</details>
+		</div>
+	</div>
 
-<p>
-<h3>Symplectic geometry research papers
-<br>
-<i>* = undergraduate mentee, ** = postdoctoral mentee</i></h3>
-<p>
-	<details>
-	<summary>
-	<b>18:</b> <a href="https://arxiv.org/abs/2412.18993">On the architecture of the Symplectic \((A_\infty,2)\)-Category</a> (2024).
-	Nathaniel Bottman.
-	11pp.
-	</summary>
-	<p>This note relates to the author's construction of the Symplectic \((A_\infty,2)\)-Category, Symp. Here we explain two ways of encoding the information in 𝖲𝗒𝗆𝗉, one topological, one algebraic. The topological encoding is as an \((A_\infty,2)\)-flow category, which we define here. The algebraic encoding is as a linear \((A_\infty,2)\)-category, which we extract from the topological encoding. In upcoming work, the author and Wehrheim plan to use the adiabatic Fredholm theory recently developed by Bottman-Wehrheim to construct Symp as an \((A_\infty,2)\)-flow category.
-	</p>
-	<p>The definition of linear \((A_\infty,2)\)-category that we give in this note is different than the one proposed by Bottman-Carmeli. The recursive structure of the 2-associahedra identifies faces with fiber products of 2-associahedra over associahedra, and these fiber products led Bottman-Carmeli to associate operations to singular chains on 2-associahedra. The innovation in our new definition of linear \((A_\infty,2)\)-category is to extend the family of 2-associahedra to include all fiber products of 2-associahedra over associahedra. This allows us to associate operations to cellular chains, which in particular enables us to produce a definition that involves only one operation in each arity, governed by a collection of \((A_\infty,2)\)-equations.</p>
-	</details>
-</p>
-<p>
-	<details>
-	<summary>
-	<b>17:</b> <a href="https://arxiv.org/abs/2412.01779">Adiabatic Fredholm Theory</a> (2024).
-	Nathaniel Bottman, Katrin Wehrheim.
-	74pp.
-	</summary>
-	<p>We develop a robust functional analytic framework for adiabatic limits. This framework consists of a notion of adiabatic Fredholm family, several possible regularity properties, and an explicit construction that provides finite dimensional reductions that fit into all common regularization theories. We show that these finite dimensional reductions inherit global continuity and differentiability properties from the adiabatic Fredholm family. Moreover, we indicate how to construct adiabatic Fredholm families that describe the adiabatic limits for the nondegenerate Atiyah-Floer conjecture and strip-shrinking in quilted Floer theory.</p>
-	</details>
-</p>
-<p>
-	<details>
-	<summary>
-	<b>16:</b> <a href="https://arxiv.org/abs/2409.10377">The focus-focus addition graph is immersed</a> (2024).
-	Mohammed Abouzaid, Nathaniel Bottman, Yunpeng Niu.
-	13pp.
-	</summary>
-	<p>For a symplectic 4-manifold \(M\) equipped with a singular Lagrangian fibration with a section, the natural fiberwise addition given by the local Hamiltonian flow is well-defined on the regular points. We prove, in the case that the singularities are of focus-focus type, that the closure of the corresponding addition graph is the image of a Lagrangian immersion in \((M\times M)^- \times M\), and we study its geometry. Our main motivation for this result is the construction of a symmetric monoidal structure on the Fukaya category of such a manifold.</p>
-	</details>
-</p>
-<p>
-	<details>
-	<summary>
-	<b>15:</b> <a href="https://arxiv.org/abs/2409.03633">Higher-Categorical Associahedra</a> (2024).
-	Spencer Backman, Nathaniel Bottman, Daria Poliakova**.
-	143pp.
-	</summary>
-	<p>The second author introduced 2-associahedra as a tool for investigating functoriality properties of Fukaya categories, and he conjectured that they could be realized as face posets of convex polytopes. We introduce a family of posets called categorical \(n\)-associahedra, which naturally extend the second author's 2-associahedra and the classical associahedra. Categorical \(n\)-associahedra give a combinatorial model for the poset of strata of a compactified real moduli space of a tree arrangement of affine coordinate subspaces. We construct a family of complete polyhedral fans, called velocity fans, whose coordinates encode the relative velocities of pairs of colliding coordinate subspaces, and whose face posets are the categorical n-associahedra. In particular, this gives the first fan realization of 2-associahedra. In the case of the classical associahedron, the velocity fan specializes to the normal fan of Loday's realization of the associahedron.
-	For proving that the velocity fan is a fan, we first construct a cone complex of metric \(n\)-bracketings and then exhibit a piecewise-linear isomorphism from this complex to the velocity fan. We demonstrate that the velocity fan, which is not simplicial, admits a canonical smooth flag triangulation on the same set of rays, and we describe a second, finer triangulation which provides a new extension of the braid arrangement. We describe piecewise-unimodular maps on the velocity fan such that the image of each cone is a union of cones in the braid arrangement, and we highlight a connection to the theory of building sets and nestohedra. We explore the local iterated fiber product structure of categorical \(n\)-associahedra and the extent to which this structure is realized by the velocity fan. For the class of concentrated \(n\)-associahedra we exhibit generalized permutahedra having velocity fans as their normal fans.</p>
-	</details>
-</p>
-<p>
-	<details>
-	<summary>
-	<b>14:</b> <a href="https://arxiv.org/abs/2208.14529">Constrainahedra</a> (2022).
-	Nathaniel Bottman, Daria Poliakova**.
-	Submitted; 17pp.
-	</summary>
-	<p>We define a family of convex polytopes called constrainahedra, which index collisions of horizontal and vertical lines. Our construction proceeds by first defining a poset \(C(m,n)\) of good rectangular preorders, then proving that \(C(m,n)\) is a lattice, and finally constructing a polytopal realization by taking the convex hull of a certain explicitly-defined collection of points. The constrainahedra will form the combinatorial backbone of the second author's construction of strong homotopy duoids. We indicate how constrainahedra could be realized as Gromov-compactified configuration spaces of horizontal and vertical lines; viewed from this perspective, the constrainahedra include naturally into the first author's notion of 2-associahedra.</p>
-	</details>
-</p>
-<p>
-	<details>
-	<summary>
-	<b>13:</b> <a href="https://arxiv.org/abs/1910.02037">A compactification of the moduli space of marked vertical lines in \(\mathbb{C}^2\)</a> (2019). Nathaniel Bottman, Alexei Oblomkov.
-	42pp; submitted to <i>Advances in Mathematics</i>, revision in preparation in response to referee report.
-	</summary>
-	<p>For \(r \geq 1\) and \(\mathbf{n} \in
-	\mathbb{Z}_{\geq0}^r\setminus\{\mathbf{0}\}\), we construct a proper complex
-	variety \(\overline{2M}_{\mathbf{n}}\). \(\overline{2M}_{\mathbf{n}}\) is locally
-	toric, and it is equipped with a forgetful map \(\overline{2M}_{\mathbf{n}} \to
-	\overline M_{0,r+1}\). This space is a compactification of \(2M_{\mathbf{n}}\),
-	the configuration space of marked vertical lines in \(\mathbb{C}^2\) up to
-	translations and dilations. In the appendices, we give several examples and
-	show how the stratification of \(\overline{2M}_{\mathbf{n}}\) can be used to
-	recursively compute its virtual Poincar&eacute; polynomial.</p>
-	</details>
-</p>
-</p>
-	<details>
-	<summary>
-	<b>12:</b> <a href="https://arxiv.org/abs/2210.11159">Functoriality in categorical symplectic geometry</a>.
-	Mohammed Abouzaid, Nathaniel Bottman.
-	Accepted, <i>Bulletin of the American Mathematical Society.</i>
-	68pp.
-	</summary>
-	<p>Categorical symplectic geometry is the study of a rich collection of invariants of symplectic manifolds, including the Fukaya \(A_\infty\)-category, Floer cohomology, and symplectic cohomology.
-	Beginning with seminal work of Wehrheim and Woodward in the late 2000s, several authors have developed techniques for functorial manipulation of these invariants.
-	We survey these functorial structures, including Wehrheim&ndash;Woodward's quilted Floer cohomology and functors associated to Lagrangian correspondences, Fukaya's alternate approach to defining functors between Fukaya \(A_\infty\)-categories, and Bottman's ongoing construction of the symplectic \((A_\infty,2)\)-category.
-	In the last section, we describe a number of direct and indirect applications of this circle of ideas, and propose a conjectural version of the Barr&ndash;Beck Monadicity Criterion in the context of the Fukaya \(A_\infty\)-category.</p>
-	</details>
-</p>
-<p>
-	<details>
-	<summary>
-	<b>11:</b> <a href="https://arxiv.org/abs/2101.03211">A simplicial version of the 2-dimensional Fulton-MacPherson operad</a>.
-	Nathaniel Bottman.
-	Accepted, <i>Algebraic &amp; Geometric Topology</i>.
-	</summary>
-	<p>We define an operad in Top, called \(\text{FM}_2^W\).
-	The spaces in \(\text{FM}_2^W\) come with CW decompositions, such that the operad compositions are cellular.
-	In fact, each space in \(\text{FM}_2^W\) is the realization of a simplicial set.
-	We expect, but do not prove here, that \(\text{FM}_2^W\) is isomorphic to the 2-dimensional Fulton-MacPherson operad \(\text{FM}_2\).
-	Our construction is connected to the author's work on the symplectic \((A_\infty,2)\)-category, and suggests a strategy toward equipping the symplectic cochain complex with the structure of a homotopy Batalin-Vilkoviskiy algebra.</p>
-	</details>
-</p>
-<p>
-	<details>
-	<summary>
-	<b>10:</b> <a href="https://arxiv.org/abs/1910.09672">The 2-associahedra are Eulerian</a>.
-	Nathaniel Bottman, Dylan Mavrides*.
-	Accepted, special issue of <i>Contemporary Mathematics (AMS)</i> in honor of Ezra Getzler.
-	</summary>
-	<p>We show that the 2-associahedra are Eulerian lattices, by exploiting their recursive structure.</p>
-	</details>
-</p>
-<p>
-	<details>
-	<summary>
-	<b>9:</b> <a href="https://arxiv.org/abs/1808.07506">Explicit constructions of quilts associated to symplectic reductions</a>. Nathaniel Bottman. <i>Kyoto Journal of Mathematics</i> 62 (2022), no. 1, 151&ndash;162.</b>
-	</summary>
-	<p>If \(G\) is a Lie group acting in a Hamiltonian fashion on a symplectic manifold \(M\), we may form the symplectic quotient \(M/\!/G\).
-	Associated to this situation is a Lagrangian correspondence \(\Lambda_G\) from \(M/\!/G\) to \(M\).
-	In this short paper, we construct in two related examples quilts with seam condition given by such a correspondence \(\Lambda_G\), in the case of \(S^1\) acting on \(\mathbb{CP}^2\) with symplectic quotient \(\mathbb{CP}^2/\!/S^1 = \mathbb{CP}^1\).
-	First, we study the quilted strips that would, if not for figure eight bubbling, identify the Floer chain group \(CF(\gamma,S^1_{\text{Cl}})\) and \(CF(\mathbb{RP}^2,T^2_{\text{Cl}})\), where \(\gamma\) is the connected double-cover of \(\mathbb{RP}^1\).
-	Second, we produce a figure eight bubble that was predicted by Akveld&ndash;Cannas da Silva&ndash;Wehrheim.
-	The figure eight bubbles we construct in this paper are the first concrete examples of this bubbling phenomenon, which is of key importance to functoriality for the Fukaya category.</p>
-	</details>
-</p>
-<p>
-	<details>
-	<summary>
-	<b>8:</b> <a href="https://arxiv.org/abs/1811.05442">\((A_\infty,2)\)-categories and relative \(2\)-operads</a>. Nathaniel Bottman, Shachar Carmeli.
-	 <i>Higher Structures</i> 5 (2021), no. 1, 401&ndash;421.
-	</summary>
-	<p>We define the notion of a 2-operad relative to an operad, and prove that the 2-associahedra form a relative 2-operad over the associahedra.
-	Using this structure, we define the notions of an \((A_\infty,2)\)-category and \((A_\infty,2)\)-category in spaces and in chain complexes over a ring.
-	Finally, we show that for any continuous map \(A\to X\), we can associate an \((A_\infty,2)\)-space \(\theta(A\to X)\), which specializes to \(\theta(\text{pt}\to X) = \Omega^2X\) and \(\theta(A \to \text{pt}) = \Omega A\times\Omega A\).</p>
-	</details>
-</p>
-<p>
-	<details>
-	<summary>
-	<b>7:</b> <a href="https://arxiv.org/abs/1410.3834">Pseudoholomorphic quilts with figure eight singularity</a>. Nathaniel Bottman.
-	<i>Journal of Symplectic Geometry</i> 18 (2020), no. 1, 1&ndash;55.
-	</summary>
-	<p>I show that the novel figure eight singularity in a pseudoholomorphic quilt can be continuously removed when composition of Lagrangian correspondences is cleanly immersed.
-	The proof of this result requires a collection of width-independent elliptic estimates that allow for non-standard complex structures on the domain.</p>
-	</details>
-</p>
-<p>
-	<details>
-	<summary>
-	<b>6:</b> <a href="https://arxiv.org/abs/1712.01194">Moduli spaces of witch curves topologically realize the 2-associahedra</a>. Nathaniel Bottman. <i>Journal of Symplectic Geometry</i> 17 (2019), no. 6, 1649&ndash;1682.
-	</summary>
-	<p>	For \(r \geq 1\) and \(\mathbf{n} \in \mathbb{Z}_{\geq0}^r\), I construct the compactified moduli space \(\overline{2\mathcal{M}}_{\mathbf{n}}\) of witch curves of type \(\mathbf{n}\). These are the domain moduli spaces for witch balls, analogous to the domain moduli spaces \(\overline{\mathcal{M}}_r\) for pseudoholomorphic polygons.
-	I equip \(\overline{2\mathcal{M}}_{\mathbf{n}}\) with a stratification by the 2-associahedron \(W_{\mathbf{n}}\), and prove that \(\overline{2\mathcal{M}}_{\mathbf{n}}\) is compact, second-countable, and metrizable.
-	In addition, I show that the forgetful map \(\overline{2\mathcal{M}}_{\mathbf{n}} \to \overline{\mathcal{M}}_r\) to the moduli space of stable disk trees is continuous and respects the stratifications.</p>
-	</details>
-</p>
-<p>
-	<details>
-	<summary>
-	<b>5:</b> <a href="https://arxiv.org/abs/1709.00119">2-associahedra.</a> Nathaniel Bottman. <i>Algebraic &amp; Geometric Topology</i> 19 (2019), no. 2, 743&ndash;806.
-	</summary>
-	<p>For any \(r\geq 1\) and \(\mathbf{n} \in \mathbb{Z}_{\geq0}^r\setminus\{\mathbf0\}\) I construct a poset \(W_{\mathbf{n}}\) called a 2-associahedron.
-	The 2-associahedra arose in symplectic geometry, where they are expected to control maps between Fukaya categories of different symplectic manifolds.
-	I prove that the completion of \(W_{\mathbf{n}}\) is an abstract polytope of dimension \(|\mathbf{n}|+r-3\).
-	There are forgetful maps \(W_{\mathbf{n}}\to K_r\), where \(K_r\) is the \((r−2)\)-dimensional associahedron, and the 2-associahedra specialize to the associahedra (in two ways) and to the multiplihedra.
-	In an appendix, I work out the 2- and 3-dimensional 2-associahedra in detail.</p>
-	</details>
-</p>
-<p>
-	<details>
-	<summary>
-	<b>4:</b> <a href="https://arxiv.org/abs/1503.03486">Gromov compactness for squiggly strip shrinking in pseudoholomorphic quilts.</a> Nathaniel Bottman, Katrin Wehrheim. <i>Selecta Mathematica</i> (2018) 24, pp. 3381&ndash;3443.
-	</summary>
-	<p>
-	We establish a Gromov compactness theorem for strip shrinking in pseudoholomorphic quilts when composition of Lagrangian correspondences is immersed.
-	In particular, we show that figure eight bubbling occurs in the limit, argue that this is a codimension-0 effect, and predict its algebraic consequences &mdash; geometric composition extends to a curved \(A_\infty\)-bifunctor, in particular the associated Floer complexes are isomorphic after a figure eight correction of the bounding cochain.
-	An appendix with Felix Schm&auml;schke provides examples of nontrivial figure eight bubbles.</p>
-	</details>
-</p>
+	<div class="pub">
+		<div class="thumb"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">14.</span> <a href="https://arxiv.org/abs/2208.14529">Constrainahedra</a> (2022)</div>
+			<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Daria Poliakova**</div>
+			<div class="pub-venue">Submitted &middot; 17pp.</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>We define a family of convex polytopes called constrainahedra, which index collisions of horizontal and vertical lines. Our construction proceeds by first defining a poset \(C(m,n)\) of good rectangular preorders, then proving that \(C(m,n)\) is a lattice, and finally constructing a polytopal realization by taking the convex hull of a certain explicitly-defined collection of points. The constrainahedra will form the combinatorial backbone of the second author's construction of strong homotopy duoids. We indicate how constrainahedra could be realized as Gromov-compactified configuration spaces of horizontal and vertical lines; viewed from this perspective, the constrainahedra include naturally into the first author's notion of 2-associahedra.</p>
+			</details>
+		</div>
+	</div>
 
-<p>
-<h3>Applied math research papers</h3>
-</p>
-<p>
-	<details>
-	<summary>
-	<b>3:</b> <a href="https://arxiv.org/abs/2005.03051">A comparison of group testing architectures for COVID-19 testing</a> (2020).
-	Joshua Batson, Nathaniel Bottman, Yaim Cooper, and Felix Janda.
-	19pp.
-	</summary>
-	<p>An important component of every country's COVID-19 response is fast and efficient testing &mdash; to identify and isolate cases, as well as for early detection of local hotspots.
-	For many countries, producing a sufficient number of tests has been a serious limiting factor in their efforts to control COVID-19 infections.
-	Group testing is a well-established mathematical tool, which can provide a serious and rapid improvement to this situation.
-	In this note, we compare several well-established group testing schemes in the context of qPCR testing for COVID-19.
-	We include example calculations, where we indicate which testing architectures yield the greatest efficiency gains in various settings.
-	We find that for identification of individuals with COVID-19, array testing is usually the best choice, while for estimation of COVID-19 prevalence rates in the total population, Gibbs-Gower testing usually provides the most accurate estimates given a fixed and relatively small number of tests.
-	This note is intended as a helpful handbook for labs implementing group testing methods.</p>
-	</details>
-</p>
-<p>
-	<details>
-	<summary>
-	<b>2:</b> <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.364.3522&rep=rep1&type=pdf">Elliptic solutions of the defocusing NLS equation are stable</a>. Nathaniel Bottman, Bernard Deconinck, Michael Nivala. <i>J. Phys. A</i> 44 (2011), no. 28, 24pp.
-	</summary>
-	<p>
-	The stability of the stationary periodic solutions of the integrable (one-dimensional, cubic) defocusing nonlinear Schrodinger (NLS) equation is reasonably well understood, especially for solutions of small amplitude.
-	In this paper, we exploit the integrability of the NLS equation to establish the spectral stability of all such stationary solutions, this time by explicitly computing the spectrum and the corresponding eigenfunctions associated with their linear stability problem.
-	An additional argument using an appropriate Krein signature allows us to conclude the (nonlinear) orbital stability of all stationary solutions of the defocusing NLS equation with respect to so-called subharmonic perturbations: perturbations that have period equal to an integer multiple of the period of the amplitude of the solution.
-	All results presented here are independent of the size of the amplitude of the solutions and apply equally to solutions with trivial and nontrivial phase profiles.
-	</p>
-	</details>
-</p>
-<p>
-	<details>
-	<summary>
-	<b>1: </b> <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.364.5043&rep=rep1&type=pdf">KdV cnoidal waves are spectrally stable</a>. Nathaniel Bottman, Bernard Deconinck. <i>Discrete Contin. Dyn. Syst. A</i> 25 (2009), no. 4, 1163&ndash;1180.
-	</summary>
-	<p>
-	Going back to considerations of Benjamin (1974), there has been significant interest in the question of stability for the stationary periodic solutions of the Korteweg-deVries equation, the so-called cnoidal waves.
-	In this paper, we exploit the squared-eigenfunction connection between the linear stability problem and the Lax pair for the Korteweg-deVries equation to completely determine the spectrum of the linear stability problem for perturbations that are bounded on the real line.
-	We find that this spectrum is confined to the imaginary axis, leading to the conclusion of spectral stability.
-	An additional argument allows us to conclude the completeness of the associated eigenfunctions.
-	</p>
-	</details>
-</p>
+	<div class="pub">
+		<div class="thumb"><img src="pics/thumbs/1910.02037.png" alt="Strata of the compactified moduli space"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">13.</span> <a href="https://arxiv.org/abs/1910.02037">A compactification of the moduli space of marked vertical lines in \(\mathbb{C}^2\)</a> (2019)</div>
+			<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Alexei Oblomkov</div>
+			<div class="pub-venue">42pp &middot; submitted to <i>Advances in Mathematics</i>, revision in preparation in response to referee report</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>For \(r \geq 1\) and \(\mathbf{n} \in \mathbb{Z}_{\geq0}^r\setminus\{\mathbf{0}\}\), we construct a proper complex variety \(\overline{2M}_{\mathbf{n}}\). \(\overline{2M}_{\mathbf{n}}\) is locally toric, and it is equipped with a forgetful map \(\overline{2M}_{\mathbf{n}} \to \overline M_{0,r+1}\). This space is a compactification of \(2M_{\mathbf{n}}\), the configuration space of marked vertical lines in \(\mathbb{C}^2\) up to translations and dilations. In the appendices, we give several examples and show how the stratification of \(\overline{2M}_{\mathbf{n}}\) can be used to recursively compute its virtual Poincar&eacute; polynomial.</p>
+			</details>
+		</div>
+	</div>
 
-<!-- <h3> Upcoming talks/research visits (as of 2/20) <a name="travel"></a></h3> -->
+	<div class="pub">
+		<div class="thumb"><img src="pics/thumbs/2210.11159.png" alt="A polytope with projected moduli spaces"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">12.</span> <a href="https://arxiv.org/abs/2210.11159">Functoriality in categorical symplectic geometry</a></div>
+			<div class="pub-authors">Mohammed Abouzaid, <span class="me">Nathaniel Bottman</span></div>
+			<div class="pub-venue">Accepted, <i>Bulletin of the American Mathematical Society</i> &middot; 68pp.</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>Categorical symplectic geometry is the study of a rich collection of invariants of symplectic manifolds, including the Fukaya \(A_\infty\)-category, Floer cohomology, and symplectic cohomology.
+			Beginning with seminal work of Wehrheim and Woodward in the late 2000s, several authors have developed techniques for functorial manipulation of these invariants.
+			We survey these functorial structures, including Wehrheim&ndash;Woodward's quilted Floer cohomology and functors associated to Lagrangian correspondences, Fukaya's alternate approach to defining functors between Fukaya \(A_\infty\)-categories, and Bottman's ongoing construction of the symplectic \((A_\infty,2)\)-category.
+			In the last section, we describe a number of direct and indirect applications of this circle of ideas, and propose a conjectural version of the Barr&ndash;Beck Monadicity Criterion in the context of the Fukaya \(A_\infty\)-category.</p>
+			</details>
+		</div>
+	</div>
 
-<h3> Teaching <a name="teaching"></a></h3>
+	<div class="pub">
+		<div class="thumb"><img src="pics/thumbs/2101.03211.png" alt="A cell refinement of a moduli space"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">11.</span> <a href="https://arxiv.org/abs/2101.03211">A simplicial version of the 2-dimensional Fulton-MacPherson operad</a></div>
+			<div class="pub-authors"><span class="me">Nathaniel Bottman</span></div>
+			<div class="pub-venue">Accepted, <i>Algebraic &amp; Geometric Topology</i></div>
+			<details class="abs"><summary>abstract</summary>
+			<p>We define an operad in Top, called \(\text{FM}_2^W\).
+			The spaces in \(\text{FM}_2^W\) come with CW decompositions, such that the operad compositions are cellular.
+			In fact, each space in \(\text{FM}_2^W\) is the realization of a simplicial set.
+			We expect, but do not prove here, that \(\text{FM}_2^W\) is isomorphic to the 2-dimensional Fulton-MacPherson operad \(\text{FM}_2\).
+			Our construction is connected to the author's work on the symplectic \((A_\infty,2)\)-category, and suggests a strategy toward equipping the symplectic cochain complex with the structure of a homotopy Batalin-Vilkoviskiy algebra.</p>
+			</details>
+		</div>
+	</div>
 
-<li>
-MATH 114, Foundations of Statistics, Fall 2020, USC
-</li>
-<li>
-MATH 226, Calculus III, Fall 2020, USC
-</li>
-<li>
-MATH 245, Mathematics of Physics and Engineering, Spring 2019, USC
-</li>
-<li>
-MATH 226, Calculus III, Fall 2019, USC
-</li>
-<li>
-MATH 5122, graduate course on manifolds, Spring 2016, Northeastern
-</li>
-<li>
-MATH 2321, multivariable calculus, Fall 2015, Northeastern
-</li>
+	<div class="pub">
+		<div class="thumb"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">10.</span> <a href="https://arxiv.org/abs/1910.09672">The 2-associahedra are Eulerian</a></div>
+			<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Dylan Mavrides*</div>
+			<div class="pub-venue">Accepted, special issue of <i>Contemporary Mathematics (AMS)</i> in honor of Ezra Getzler</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>We show that the 2-associahedra are Eulerian lattices, by exploiting their recursive structure.</p>
+			</details>
+		</div>
+	</div>
 
+	<div class="pub">
+		<div class="thumb"><img src="pics/thumbs/1808.07506.png" alt="A labeled quilt domain"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">9.</span> <a href="https://arxiv.org/abs/1808.07506">Explicit constructions of quilts associated to symplectic reductions</a></div>
+			<div class="pub-authors"><span class="me">Nathaniel Bottman</span></div>
+			<div class="pub-venue"><i>Kyoto Journal of Mathematics</i> 62 (2022), no. 1, 151&ndash;162</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>If \(G\) is a Lie group acting in a Hamiltonian fashion on a symplectic manifold \(M\), we may form the symplectic quotient \(M/\!/G\).
+			Associated to this situation is a Lagrangian correspondence \(\Lambda_G\) from \(M/\!/G\) to \(M\).
+			In this short paper, we construct in two related examples quilts with seam condition given by such a correspondence \(\Lambda_G\), in the case of \(S^1\) acting on \(\mathbb{CP}^2\) with symplectic quotient \(\mathbb{CP}^2/\!/S^1 = \mathbb{CP}^1\).
+			First, we study the quilted strips that would, if not for figure eight bubbling, identify the Floer chain group \(CF(\gamma,S^1_{\text{Cl}})\) and \(CF(\mathbb{RP}^2,T^2_{\text{Cl}})\), where \(\gamma\) is the connected double-cover of \(\mathbb{RP}^1\).
+			Second, we produce a figure eight bubble that was predicted by Akveld&ndash;Cannas da Silva&ndash;Wehrheim.
+			The figure eight bubbles we construct in this paper are the first concrete examples of this bubbling phenomenon, which is of key importance to functoriality for the Fukaya category.</p>
+			</details>
+		</div>
+	</div>
 
-<h3>Miscellaneous<a name="misc"></a></h3>
+	<div class="pub">
+		<div class="thumb"><img src="pics/thumbs/1811.05442.png" alt="Cylindrical polytopes related to the Batanin picture"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">8.</span> <a href="https://arxiv.org/abs/1811.05442">\((A_\infty,2)\)-categories and relative \(2\)-operads</a></div>
+			<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Shachar Carmeli</div>
+			<div class="pub-venue"><i>Higher Structures</i> 5 (2021), no. 1, 401&ndash;421</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>We define the notion of a 2-operad relative to an operad, and prove that the 2-associahedra form a relative 2-operad over the associahedra.
+			Using this structure, we define the notions of an \((A_\infty,2)\)-category and \((A_\infty,2)\)-category in spaces and in chain complexes over a ring.
+			Finally, we show that for any continuous map \(A\to X\), we can associate an \((A_\infty,2)\)-space \(\theta(A\to X)\), which specializes to \(\theta(\text{pt}\to X) = \Omega^2X\) and \(\theta(A \to \text{pt}) = \Omega A\times\Omega A\).</p>
+			</details>
+		</div>
+	</div>
 
-<p>
-<li>
-	My thesis: <a href="docs/thesis.pdf">Pseudoholomorphic quilts with figure eight singularity</a>.
-</li>
-</p>
-<p>
-<li>
-	In the note <a href="docs/new_setup_for_Wn.pdf">A new approach to Symp</a>, I show that a linear \((A_\infty,2)\)-algebra \(A\) induces an \(A_\infty\)-structure on the bar complex \(TA[1]\).
-</li>
-</p>
-<p>
-<li>
-	Check out <a href="https://github.com/natebottman/complex-2associahedra">complex-2associahedra</a>, a repository whose main point is a Python script that computes virtual Poincare polynomials of complex 2-associahedra.
-	This is in support of my paper 9 with Alexei Oblomkov.
-</li>
-</p>
-<p>
-<li>
-	Aleksandar Subotic's thesis: <a href="docs/A_monoidal_structure_for_the_Fukaya_category.pdf">A monoidal structure for the Fukaya category</a>.
-	Aleksandar has given me permission to host his thesis on my website, because it is somewhat tricky to find on the internet but continues to be a useful reference for a higher structure that emerges when studying the Fukaya category of a Lagrangian torus fibration with a distinguished Lagrangian section.
-</li>
-</p>
-<p>
-<li>
-	My colleage <a href="http://ycooper.net">Coo</a><a href="http://y-cooper.com">per</a>.
-</li>
-</p>
-<p>
-<li>
-	<a href="http://www.not-just-math.org">Not Just Math</a>
-</li>
-</p>
+	<div class="pub">
+		<div class="thumb"><img src="pics/thumbs/1410.3834.png" alt="The figure eight bubble"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">7.</span> <a href="https://arxiv.org/abs/1410.3834">Pseudoholomorphic quilts with figure eight singularity</a></div>
+			<div class="pub-authors"><span class="me">Nathaniel Bottman</span></div>
+			<div class="pub-venue"><i>Journal of Symplectic Geometry</i> 18 (2020), no. 1, 1&ndash;55</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>I show that the novel figure eight singularity in a pseudoholomorphic quilt can be continuously removed when composition of Lagrangian correspondences is cleanly immersed.
+			The proof of this result requires a collection of width-independent elliptic estimates that allow for non-standard complex structures on the domain.</p>
+			</details>
+		</div>
+	</div>
 
-</td></tr></tbody></table>
+	<div class="pub">
+		<div class="thumb"><img src="pics/thumbs/1712.01194.png" alt="Witch balls"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">6.</span> <a href="https://arxiv.org/abs/1712.01194">Moduli spaces of witch curves topologically realize the 2-associahedra</a></div>
+			<div class="pub-authors"><span class="me">Nathaniel Bottman</span></div>
+			<div class="pub-venue"><i>Journal of Symplectic Geometry</i> 17 (2019), no. 6, 1649&ndash;1682</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>For \(r \geq 1\) and \(\mathbf{n} \in \mathbb{Z}_{\geq0}^r\), I construct the compactified moduli space \(\overline{2\mathcal{M}}_{\mathbf{n}}\) of witch curves of type \(\mathbf{n}\). These are the domain moduli spaces for witch balls, analogous to the domain moduli spaces \(\overline{\mathcal{M}}_r\) for pseudoholomorphic polygons.
+			I equip \(\overline{2\mathcal{M}}_{\mathbf{n}}\) with a stratification by the 2-associahedron \(W_{\mathbf{n}}\), and prove that \(\overline{2\mathcal{M}}_{\mathbf{n}}\) is compact, second-countable, and metrizable.
+			In addition, I show that the forgetful map \(\overline{2\mathcal{M}}_{\mathbf{n}} \to \overline{\mathcal{M}}_r\) to the moduli space of stable disk trees is continuous and respects the stratifications.</p>
+			</details>
+		</div>
+	</div>
 
+	<div class="pub">
+		<div class="thumb"><img src="pics/thumbs/1709.00119.png" alt="Examples of 2-associahedra"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">5.</span> <a href="https://arxiv.org/abs/1709.00119">2-associahedra</a></div>
+			<div class="pub-authors"><span class="me">Nathaniel Bottman</span></div>
+			<div class="pub-venue"><i>Algebraic &amp; Geometric Topology</i> 19 (2019), no. 2, 743&ndash;806</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>For any \(r\geq 1\) and \(\mathbf{n} \in \mathbb{Z}_{\geq0}^r\setminus\{\mathbf0\}\) I construct a poset \(W_{\mathbf{n}}\) called a 2-associahedron.
+			The 2-associahedra arose in symplectic geometry, where they are expected to control maps between Fukaya categories of different symplectic manifolds.
+			I prove that the completion of \(W_{\mathbf{n}}\) is an abstract polytope of dimension \(|\mathbf{n}|+r-3\).
+			There are forgetful maps \(W_{\mathbf{n}}\to K_r\), where \(K_r\) is the \((r−2)\)-dimensional associahedron, and the 2-associahedra specialize to the associahedra (in two ways) and to the multiplihedra.
+			In an appendix, I work out the 2- and 3-dimensional 2-associahedra in detail.</p>
+			</details>
+		</div>
+	</div>
 
+	<div class="pub">
+		<div class="thumb"><img src="pics/thumbs/1503.03486.png" alt="Quilted strips with bubbles"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">4.</span> <a href="https://arxiv.org/abs/1503.03486">Gromov compactness for squiggly strip shrinking in pseudoholomorphic quilts</a></div>
+			<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Katrin Wehrheim</div>
+			<div class="pub-venue"><i>Selecta Mathematica</i> (2018) 24, pp. 3381&ndash;3443</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>We establish a Gromov compactness theorem for strip shrinking in pseudoholomorphic quilts when composition of Lagrangian correspondences is immersed.
+			In particular, we show that figure eight bubbling occurs in the limit, argue that this is a codimension-0 effect, and predict its algebraic consequences &mdash; geometric composition extends to a curved \(A_\infty\)-bifunctor, in particular the associated Floer complexes are isomorphic after a figure eight correction of the bounding cochain.
+			An appendix with Felix Schm&auml;schke provides examples of nontrivial figure eight bubbles.</p>
+			</details>
+		</div>
+	</div>
 
-</body></html>
+	<h3 class="subhead">Applied mathematics</h3>
+
+	<div class="pub">
+		<div class="thumb"><img src="pics/thumbs/2005.03051.png" alt="Efficiency comparison of group testing schemes"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">3.</span> <a href="https://arxiv.org/abs/2005.03051">A comparison of group testing architectures for COVID-19 testing</a> (2020)</div>
+			<div class="pub-authors">Joshua Batson, <span class="me">Nathaniel Bottman</span>, Yaim Cooper, Felix Janda</div>
+			<div class="pub-venue">arXiv:2005.03051 &middot; 19pp.</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>An important component of every country's COVID-19 response is fast and efficient testing &mdash; to identify and isolate cases, as well as for early detection of local hotspots.
+			For many countries, producing a sufficient number of tests has been a serious limiting factor in their efforts to control COVID-19 infections.
+			Group testing is a well-established mathematical tool, which can provide a serious and rapid improvement to this situation.
+			In this note, we compare several well-established group testing schemes in the context of qPCR testing for COVID-19.
+			We include example calculations, where we indicate which testing architectures yield the greatest efficiency gains in various settings.
+			We find that for identification of individuals with COVID-19, array testing is usually the best choice, while for estimation of COVID-19 prevalence rates in the total population, Gibbs-Gower testing usually provides the most accurate estimates given a fixed and relatively small number of tests.
+			This note is intended as a helpful handbook for labs implementing group testing methods.</p>
+			</details>
+		</div>
+	</div>
+
+	<div class="pub">
+		<div class="thumb"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">2.</span> <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.364.3522&rep=rep1&type=pdf">Elliptic solutions of the defocusing NLS equation are stable</a></div>
+			<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Bernard Deconinck, Michael Nivala</div>
+			<div class="pub-venue"><i>J. Phys. A</i> 44 (2011), no. 28, 24pp.</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>The stability of the stationary periodic solutions of the integrable (one-dimensional, cubic) defocusing nonlinear Schrodinger (NLS) equation is reasonably well understood, especially for solutions of small amplitude.
+			In this paper, we exploit the integrability of the NLS equation to establish the spectral stability of all such stationary solutions, this time by explicitly computing the spectrum and the corresponding eigenfunctions associated with their linear stability problem.
+			An additional argument using an appropriate Krein signature allows us to conclude the (nonlinear) orbital stability of all stationary solutions of the defocusing NLS equation with respect to so-called subharmonic perturbations: perturbations that have period equal to an integer multiple of the period of the amplitude of the solution.
+			All results presented here are independent of the size of the amplitude of the solutions and apply equally to solutions with trivial and nontrivial phase profiles.</p>
+			</details>
+		</div>
+	</div>
+
+	<div class="pub">
+		<div class="thumb"></div>
+		<div class="pub-body">
+			<div class="pub-title"><span class="num">1.</span> <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.364.5043&rep=rep1&type=pdf">KdV cnoidal waves are spectrally stable</a></div>
+			<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Bernard Deconinck</div>
+			<div class="pub-venue"><i>Discrete Contin. Dyn. Syst. A</i> 25 (2009), no. 4, 1163&ndash;1180</div>
+			<details class="abs"><summary>abstract</summary>
+			<p>Going back to considerations of Benjamin (1974), there has been significant interest in the question of stability for the stationary periodic solutions of the Korteweg-deVries equation, the so-called cnoidal waves.
+			In this paper, we exploit the squared-eigenfunction connection between the linear stability problem and the Lax pair for the Korteweg-deVries equation to completely determine the spectrum of the linear stability problem for perturbations that are bounded on the real line.
+			We find that this spectrum is confined to the imaginary axis, leading to the conclusion of spectral stability.
+			An additional argument allows us to conclude the completeness of the associated eigenfunctions.</p>
+			</details>
+		</div>
+	</div>
+
+	<h2 id="teaching">Teaching</h2>
+	<ul class="plain">
+		<li>MATH 114, Foundations of Statistics, Fall 2020, USC</li>
+		<li>MATH 226, Calculus III, Fall 2020, USC</li>
+		<li>MATH 245, Mathematics of Physics and Engineering, Spring 2019, USC</li>
+		<li>MATH 226, Calculus III, Fall 2019, USC</li>
+		<li>MATH 5122, graduate course on manifolds, Spring 2016, Northeastern</li>
+		<li>MATH 2321, multivariable calculus, Fall 2015, Northeastern</li>
+	</ul>
+
+	<h2 id="misc">Miscellaneous</h2>
+	<ul class="plain">
+		<li>My thesis: <a href="docs/thesis.pdf">Pseudoholomorphic quilts with figure eight singularity</a>.</li>
+		<li>In the note <a href="docs/new_setup_for_Wn.pdf">A new approach to Symp</a>, I show that a linear \((A_\infty,2)\)-algebra \(A\) induces an \(A_\infty\)-structure on the bar complex \(TA[1]\).</li>
+		<li>Check out <a href="https://github.com/natebottman/complex-2associahedra">complex-2associahedra</a>, a repository whose main point is a Python script that computes virtual Poincare polynomials of complex 2-associahedra.
+		This is in support of my paper 13 with Alexei Oblomkov.</li>
+		<li>Aleksandar Subotic's thesis: <a href="docs/A_monoidal_structure_for_the_Fukaya_category.pdf">A monoidal structure for the Fukaya category</a>.
+		Aleksandar has given me permission to host his thesis on my website, because it is somewhat tricky to find on the internet but continues to be a useful reference for a higher structure that emerges when studying the Fukaya category of a Lagrangian torus fibration with a distinguished Lagrangian section.</li>
+		<li>My colleage <a href="http://ycooper.net">Coo</a><a href="http://y-cooper.com">per</a>.</li>
+		<li><a href="http://www.not-just-math.org">Not Just Math</a></li>
+	</ul>
+
+	<div class="footer">
+		Last updated August 2026. Paper thumbnails are figures from the corresponding papers.
+	</div>
+
+</div>
+</body>
+</html>
