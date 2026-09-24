@@ -26,6 +26,7 @@
 		h2 { font-size: 22px; font-weight: 500; color: #000; margin: 44px 0 6px; border-bottom: 1px solid #e6e6e6; padding-bottom: 8px; }
 		h3.subhead { font-size: 16.5px; font-weight: 600; color: #444; margin: 30px 0 2px; }
 		.note { font-size: 13px; color: #888; font-style: italic; margin-bottom: 6px; }
+		.pub-note { font-size: 13.5px; color: #555; margin-top: 3px; }
 		ul.news { list-style: none; padding: 0; margin: 12px 0 0; }
 		ul.news li { display: flex; gap: 16px; padding: 5px 0; }
 		ul.news .when { flex: 0 0 74px; color: #999; font-size: 13.5px; padding-top: 1.5px; }
@@ -95,6 +96,12 @@
 		<li><span class="when">Sep 2026</span>
 		<span>&ldquo;Operadic consistency: a label-free signal for compositional reasoning failures in LLMs&rdquo;
 		was accepted to <a href="https://neurips.cc/Conferences/2026">NeurIPS 2026</a> as a poster.</span></li>
+		<li><span class="when">Sep 2026</span>
+		<span>New preprint with Spencer Backman and Daria Poliakova,
+		<a href="https://arxiv.org/abs/2609.25316">A polytopal realization of higher-categorical associahedra</a>.
+		The central construction was found by OpenAI's Astra model, and we formalized the result in Lean 4 with
+		Anthropic's Opus and Fable, making the note a concrete case study in frontier models contributing to
+		research-level mathematics.</span></li>
 		<li><span class="when">Jul 2026</span>
 		<span>I co-organized the
 		<a href="https://sites.google.com/view/icml-ctb">Combining Theory and Benchmarks</a>
@@ -114,7 +121,7 @@
 	<h3 class="subhead">Machine learning</h3>
 
 	<div class="pub">
-		<div class="pub-title"><span class="num">21.</span> <a href="https://arxiv.org/abs/2606.13649">Operadic consistency: a label-free signal for compositional reasoning failures in LLMs</a> (2026)</div>
+		<div class="pub-title"><span class="num">22.</span> <a href="https://arxiv.org/abs/2606.13649">Operadic consistency: a label-free signal for compositional reasoning failures in LLMs</a> (2026)</div>
 		<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Yinhong Liu, Kyle Richardson</div>
 		<div class="pub-venue">NeurIPS 2026 (poster), arXiv:2606.13649, <a href="https://github.com/natebottman/operadic-consistency-paper">code</a></div>
 		<details class="abs"><summary>abstract</summary>
@@ -123,7 +130,7 @@
 	</div>
 
 	<div class="pub">
-		<div class="pub-title"><span class="num">20.</span> <a href="https://arxiv.org/abs/2606.13634">Operads for compositional reasoning in LLMs</a> (2026)</div>
+		<div class="pub-title"><span class="num">21.</span> <a href="https://arxiv.org/abs/2606.13634">Operads for compositional reasoning in LLMs</a> (2026)</div>
 		<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Kyle Richardson</div>
 		<div class="pub-venue">arXiv:2606.13634, presented at the Compositional Learning and the Combining Theory and Benchmarks workshops at ICML 2026</div>
 		<details class="abs"><summary>abstract</summary>
@@ -132,7 +139,7 @@
 	</div>
 
 	<div class="pub">
-		<div class="pub-title"><span class="num">19.</span> <a href="https://arxiv.org/abs/2307.15744">How regularization affects the geometry of loss functions</a> (2023)</div>
+		<div class="pub-title"><span class="num">20.</span> <a href="https://arxiv.org/abs/2307.15744">How regularization affects the geometry of loss functions</a> (2023)</div>
 		<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Y. Cooper, Antonio Lerario</div>
 		<div class="pub-venue">arXiv:2307.15744, 16pp.</div>
 		<details class="abs"><summary>abstract</summary>
@@ -145,6 +152,18 @@
 
 	<h3 class="subhead">Symplectic geometry and combinatorics</h3>
 	<div class="note">* = undergraduate mentee, ** = postdoctoral mentee</div>
+
+	<div class="pub">
+		<div class="pub-title"><span class="num">19.</span> <a href="https://arxiv.org/abs/2609.25316">A polytopal realization of higher-categorical associahedra</a> (2026)</div>
+		<div class="pub-authors">Spencer Backman, <span class="me">Nathaniel Bottman</span>, Daria Poliakova**</div>
+		<div class="pub-venue">arXiv:2609.25316, 9pp.</div>
+		<div class="pub-note">The central construction was found by OpenAI's Astra model, which returned it on the
+		first attempt after we posed the problem; we then formalized the result in Lean 4 with Anthropic's Opus and
+		Fable. A full written proof of polytopality will appear in future work.</div>
+		<details class="abs"><summary>abstract</summary>
+		<p>We describe a polytopal realization of categorical \(n\)-associahedra. The normal fan of this polytopal realization is a modification of the authors' velocity fan and was found by OpenAI's Astra model.</p>
+		</details>
+	</div>
 
 	<div class="pub">
 		<div class="pub-title"><span class="num">18.</span> <a href="https://arxiv.org/abs/2412.18993">Foundations of \((A_\infty,2)\)-categories: from flow to linear</a> (2024)</div>
