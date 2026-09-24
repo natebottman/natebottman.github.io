@@ -26,6 +26,9 @@
 		h2 { font-size: 22px; font-weight: 500; color: #000; margin: 44px 0 6px; border-bottom: 1px solid #e6e6e6; padding-bottom: 8px; }
 		h3.subhead { font-size: 16.5px; font-weight: 600; color: #444; margin: 30px 0 2px; }
 		.note { font-size: 13px; color: #888; font-style: italic; margin-bottom: 6px; }
+		ul.news { list-style: none; padding: 0; margin: 12px 0 0; }
+		ul.news li { display: flex; gap: 16px; padding: 5px 0; }
+		ul.news .when { flex: 0 0 74px; color: #999; font-size: 13.5px; padding-top: 1.5px; }
 		.pub { padding: 11px 0; }
 		.pub-title { font-weight: 600; font-size: 16px; }
 		.pub-title .num { font-weight: 400; color: #999; }
@@ -46,6 +49,8 @@
 		@media (max-width: 640px) {
 			.hero { flex-direction: column-reverse; }
 			.hero-photo { align-self: center; }
+			ul.news li { display: block; }
+			ul.news .when { display: block; }
 		}
 	</style>
 	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
@@ -85,6 +90,21 @@
 		</div>
 	</div>
 
+	<h2 id="news">News</h2>
+	<ul class="news">
+		<li><span class="when">Sep 2026</span>
+		<span>&ldquo;Operadic consistency: a label-free signal for compositional reasoning failures in LLMs&rdquo;
+		was accepted to <a href="https://neurips.cc/Conferences/2026">NeurIPS 2026</a> as a poster.</span></li>
+		<li><span class="when">Jul 2026</span>
+		<span>I co-organized the
+		<a href="https://sites.google.com/view/icml-ctb">Combining Theory and Benchmarks</a>
+		workshop at ICML 2026 in Seoul.</span></li>
+		<li><span class="when">Jun 2026</span>
+		<span>Our two papers on operadic consistency, the
+		<a href="https://arxiv.org/abs/2606.13649">empirical</a> one and the
+		<a href="https://arxiv.org/abs/2606.13634">theoretical</a> one, were posted to arXiv.</span></li>
+	</ul>
+
 	<h2 id="research">Research</h2>
 	<p>My current focus is on using operads, the mathematics of many-in, one-out operations and
 	their compositions, to describe, measure, and improve compositional reasoning in LLMs.
@@ -96,7 +116,7 @@
 	<div class="pub">
 		<div class="pub-title"><span class="num">21.</span> <a href="https://arxiv.org/abs/2606.13649">Operadic consistency: a label-free signal for compositional reasoning failures in LLMs</a> (2026)</div>
 		<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Yinhong Liu, Kyle Richardson</div>
-		<div class="pub-venue">arXiv:2606.13649 &middot; <a href="https://github.com/natebottman/operadic-consistency-paper">code</a></div>
+		<div class="pub-venue">NeurIPS 2026 (poster), arXiv:2606.13649, <a href="https://github.com/natebottman/operadic-consistency-paper">code</a></div>
 		<details class="abs"><summary>abstract</summary>
 		<p>Detecting LLM reasoning failures at inference time without ground-truth labels has motivated a wide range of confidence baselines, including self-consistency, semantic entropy, and P(True), built on within-question sampling and self-evaluation. Operad theory, the formalism for systems built by iterated substitution, suggests a complementary diagnostic: a model's direct answer to a compositional query should agree with the answer it produces by composing a stated decomposition of the same query. We instantiate this idea as operadic consistency (OC), a per-question signal. Across twelve instruction-tuned LLMs (4B to 671B parameters, open-weights and closed-source) on four multi-hop QA datasets, OC is strongly correlated with accuracy on every dataset (Pearson \(r \in [0.86, 0.94]\), all \(p \leq 0.0004\)), and is the only signal we evaluate with \(r \geq 0.85\) uniformly across all four datasets. Chain-of-thought self-consistency (CoT-SC; Wang et al., 2023) matches OC on HotpotQA and DROP (\(r = 0.93, 0.87\)) but drops to \(r \approx 0.45\) on MuSiQue and StrategyQA. At the per-question level, OC contributes information beyond CoT-SC and semantic entropy on every dataset (cluster-robust \(p \leq 10^{-16}\) for the OC coefficient), and the conclusion is robust to additionally controlling for constructed decomposition-aware baselines (\(p \leq 10^{-13}\)). The same signal yields selective-prediction improvements (accuracy at fixed coverage) over a tuned CoT-SC baseline at the equal-cost \(K = 3\) budget (AUARC lifts of +0.086 to +0.096 and AUROC lifts of +0.092 to +0.164; 95% CIs exclude zero on every cell). On five frontier thinking models, where the decomposition is extracted from the model's own chain of thought, the same equal-cost comparison gives positive selective-prediction point-estimate lift on all 16 (dataset, budget, metric) cells tested, with 95% CIs excluding zero on 12 of the 16.</p>
 		</details>
@@ -105,7 +125,7 @@
 	<div class="pub">
 		<div class="pub-title"><span class="num">20.</span> <a href="https://arxiv.org/abs/2606.13634">Operads for compositional reasoning in LLMs</a> (2026)</div>
 		<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Kyle Richardson</div>
-		<div class="pub-venue">arXiv:2606.13634 &middot; Presented at the Compositional Learning and the Combining Theory and Benchmarks workshops at ICML 2026</div>
+		<div class="pub-venue">arXiv:2606.13634, presented at the Compositional Learning and the Combining Theory and Benchmarks workshops at ICML 2026</div>
 		<details class="abs"><summary>abstract</summary>
 		<p>Question decomposition, i.e. breaking a complex query into simpler sub-queries whose answers are composed to produce a final answer, is a widely used strategy for improving LLM reasoning, yet it currently lacks a rigorous mathematical foundation. In this paper, we propose operads, mathematical structures that model many-in, one-out operations and compositions thereof, as a natural framework for describing question decomposition. We define the questions operad \(Q\), in which operations correspond to question templates and composition corresponds to substitution of sub-answers, and show how QA models can be interpreted as algebras over \(Q\). Beyond reframing existing practice, this operadic perspective points toward new methods, in particular a notion of operadic consistency, which measures whether a QA model's answers agree across the partial collapses of a question decomposition tree. Empirical evaluation of operadic consistency is reported in our companion paper (Bottman, Liu, and Richardson, 2026), which finds it strongly correlated with accuracy across twelve LLMs and four multi-hop QA datasets and outperforming standard temperature-based self-consistency baselines. We argue that operads are the natural mathematical home for question decomposition, and that invariants such as operadic consistency open new directions for analyzing and improving the reliability of multi-step reasoning.</p>
 		</details>
@@ -114,7 +134,7 @@
 	<div class="pub">
 		<div class="pub-title"><span class="num">19.</span> <a href="https://arxiv.org/abs/2307.15744">How regularization affects the geometry of loss functions</a> (2023)</div>
 		<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Y. Cooper, Antonio Lerario</div>
-		<div class="pub-venue">arXiv:2307.15744 &middot; 16pp.</div>
+		<div class="pub-venue">arXiv:2307.15744, 16pp.</div>
 		<details class="abs"><summary>abstract</summary>
 		<p>What neural networks learn depends fundamentally on the geometry of the underlying loss function.
 		We study how different regularizers affect the geometry of this function. One of the most basic geometric properties of a smooth function is whether it is Morse or not.
@@ -139,7 +159,7 @@
 	<div class="pub">
 		<div class="pub-title"><span class="num">17.</span> <a href="https://arxiv.org/abs/2412.01779">Adiabatic Fredholm Theory</a> (2024)</div>
 		<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Katrin Wehrheim</div>
-		<div class="pub-venue">arXiv:2412.01779 &middot; 74pp.</div>
+		<div class="pub-venue">arXiv:2412.01779, 74pp.</div>
 		<details class="abs"><summary>abstract</summary>
 		<p>We develop a robust functional analytic framework for adiabatic limits. This framework consists of a notion of adiabatic Fredholm family, several possible regularity properties, and an explicit construction that provides finite dimensional reductions that fit into all common regularization theories. We show that these finite dimensional reductions inherit global continuity and differentiability properties from the adiabatic Fredholm family. Moreover, we indicate how to construct adiabatic Fredholm families that describe the adiabatic limits for the nondegenerate Atiyah-Floer conjecture and strip-shrinking in quilted Floer theory.</p>
 		</details>
@@ -148,7 +168,7 @@
 	<div class="pub">
 		<div class="pub-title"><span class="num">16.</span> <a href="https://arxiv.org/abs/2409.10377">The focus-focus addition graph is immersed</a> (2024)</div>
 		<div class="pub-authors">Mohammed Abouzaid, <span class="me">Nathaniel Bottman</span>, Yunpeng Niu</div>
-		<div class="pub-venue">arXiv:2409.10377 &middot; 13pp.</div>
+		<div class="pub-venue">arXiv:2409.10377, 13pp.</div>
 		<details class="abs"><summary>abstract</summary>
 		<p>For a symplectic 4-manifold \(M\) equipped with a singular Lagrangian fibration with a section, the natural fiberwise addition given by the local Hamiltonian flow is well-defined on the regular points. We prove, in the case that the singularities are of focus-focus type, that the closure of the corresponding addition graph is the image of a Lagrangian immersion in \((M\times M)^- \times M\), and we study its geometry. Our main motivation for this result is the construction of a symmetric monoidal structure on the Fukaya category of such a manifold.</p>
 		</details>
@@ -157,7 +177,7 @@
 	<div class="pub">
 		<div class="pub-title"><span class="num">15.</span> <a href="https://arxiv.org/abs/2409.03633">Higher-Categorical Associahedra</a> (2024)</div>
 		<div class="pub-authors">Spencer Backman, <span class="me">Nathaniel Bottman</span>, Daria Poliakova**</div>
-		<div class="pub-venue">arXiv:2409.03633 &middot; 143pp.</div>
+		<div class="pub-venue">arXiv:2409.03633, 143pp.</div>
 		<details class="abs"><summary>abstract</summary>
 		<p>The second author introduced 2-associahedra as a tool for investigating functoriality properties of Fukaya categories, and he conjectured that they could be realized as face posets of convex polytopes. We introduce a family of posets called categorical \(n\)-associahedra, which naturally extend the second author's 2-associahedra and the classical associahedra. Categorical \(n\)-associahedra give a combinatorial model for the poset of strata of a compactified real moduli space of a tree arrangement of affine coordinate subspaces. We construct a family of complete polyhedral fans, called velocity fans, whose coordinates encode the relative velocities of pairs of colliding coordinate subspaces, and whose face posets are the categorical n-associahedra. In particular, this gives the first fan realization of 2-associahedra. In the case of the classical associahedron, the velocity fan specializes to the normal fan of Loday's realization of the associahedron.</p>
 		<p>For proving that the velocity fan is a fan, we first construct a cone complex of metric \(n\)-bracketings and then exhibit a piecewise-linear isomorphism from this complex to the velocity fan. We demonstrate that the velocity fan, which is not simplicial, admits a canonical smooth flag triangulation on the same set of rays, and we describe a second, finer triangulation which provides a new extension of the braid arrangement. We describe piecewise-unimodular maps on the velocity fan such that the image of each cone is a union of cones in the braid arrangement, and we highlight a connection to the theory of building sets and nestohedra. We explore the local iterated fiber product structure of categorical \(n\)-associahedra and the extent to which this structure is realized by the velocity fan. For the class of concentrated \(n\)-associahedra we exhibit generalized permutahedra having velocity fans as their normal fans.</p>
@@ -167,7 +187,7 @@
 	<div class="pub">
 		<div class="pub-title"><span class="num">14.</span> <a href="https://arxiv.org/abs/2208.14529">Constrainahedra</a> (2022)</div>
 		<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Daria Poliakova**</div>
-		<div class="pub-venue">Submitted &middot; 17pp.</div>
+		<div class="pub-venue">Submitted, 17pp.</div>
 		<details class="abs"><summary>abstract</summary>
 		<p>We define a family of convex polytopes called constrainahedra, which index collisions of horizontal and vertical lines. Our construction proceeds by first defining a poset \(C(m,n)\) of good rectangular preorders, then proving that \(C(m,n)\) is a lattice, and finally constructing a polytopal realization by taking the convex hull of a certain explicitly-defined collection of points. The constrainahedra will form the combinatorial backbone of the second author's construction of strong homotopy duoids. We indicate how constrainahedra could be realized as Gromov-compactified configuration spaces of horizontal and vertical lines; viewed from this perspective, the constrainahedra include naturally into the first author's notion of 2-associahedra.</p>
 		</details>
@@ -176,7 +196,7 @@
 	<div class="pub">
 		<div class="pub-title"><span class="num">13.</span> <a href="https://arxiv.org/abs/1910.02037">A compactification of the moduli space of marked vertical lines in \(\mathbb{C}^2\)</a> (2019)</div>
 		<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Alexei Oblomkov</div>
-		<div class="pub-venue">42pp &middot; submitted to <i>Advances in Mathematics</i>, revision in preparation in response to referee report</div>
+		<div class="pub-venue">42pp, submitted to <i>Advances in Mathematics</i>, revision in preparation in response to referee report</div>
 		<details class="abs"><summary>abstract</summary>
 		<p>For \(r \geq 1\) and \(\mathbf{n} \in \mathbb{Z}_{\geq0}^r\setminus\{\mathbf{0}\}\), we construct a proper complex variety \(\overline{2M}_{\mathbf{n}}\). \(\overline{2M}_{\mathbf{n}}\) is locally toric, and it is equipped with a forgetful map \(\overline{2M}_{\mathbf{n}} \to \overline M_{0,r+1}\). This space is a compactification of \(2M_{\mathbf{n}}\), the configuration space of marked vertical lines in \(\mathbb{C}^2\) up to translations and dilations. In the appendices, we give several examples and show how the stratification of \(\overline{2M}_{\mathbf{n}}\) can be used to recursively compute its virtual Poincar&eacute; polynomial.</p>
 		</details>
@@ -291,7 +311,7 @@
 	<div class="pub">
 		<div class="pub-title"><span class="num">3.</span> <a href="https://arxiv.org/abs/2005.03051">A comparison of group testing architectures for COVID-19 testing</a> (2020)</div>
 		<div class="pub-authors">Joshua Batson, <span class="me">Nathaniel Bottman</span>, Yaim Cooper, Felix Janda</div>
-		<div class="pub-venue">arXiv:2005.03051 &middot; 19pp.</div>
+		<div class="pub-venue">arXiv:2005.03051, 19pp.</div>
 		<details class="abs"><summary>abstract</summary>
 		<p>An important component of every country's COVID-19 response is fast and efficient testing &mdash; to identify and isolate cases, as well as for early detection of local hotspots.
 		For many countries, producing a sufficient number of tests has been a serious limiting factor in their efforts to control COVID-19 infections.
@@ -328,7 +348,7 @@
 	</div>
 
 	<div class="footer">
-		Last updated August 2026.
+		Last updated September 2026.
 	</div>
 
 </div>
