@@ -5,11 +5,11 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="canonical" href="https://natebottman.com/">
 	<title>Nathaniel Bottman</title>
-	<meta name="description" content="Machine learning researcher working on the mathematical foundations of reasoning in large language models. PI of a DARPA AIQ award. Previously a research group leader at the Max Planck Institute for Mathematics.">
+	<meta name="description" content="Machine learning researcher working on reinforcement-learning post-training and evaluation of large language models. PI of a DARPA AIQ award. Previously a research group leader at the Max Planck Institute for Mathematics.">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://natebottman.com/">
 	<meta property="og:title" content="Nathaniel Bottman">
-	<meta property="og:description" content="Machine learning researcher working on the mathematical foundations of reasoning in large language models. PI of a DARPA AIQ award. Previously a research group leader at the Max Planck Institute for Mathematics.">
+	<meta property="og:description" content="Machine learning researcher working on reinforcement-learning post-training and evaluation of large language models. PI of a DARPA AIQ award. Previously a research group leader at the Max Planck Institute for Mathematics.">
 	<meta property="og:image" content="https://natebottman.com/pics/headshot.jpg">
 	<meta name="twitter:card" content="summary">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -75,13 +75,16 @@
 	<div class="hero">
 		<div class="hero-text">
 			<h1>Nathaniel Bottman</h1>
-			<p>I am a machine learning researcher working on the mathematical foundations of reasoning
-			in large language models. I am principal investigator of &ldquo;An Operad-Based Framework for Deep
-			Learning,&rdquo; an award from DARPA's
+			<p>I am a machine learning researcher working on reinforcement-learning post-training and
+			evaluation of large language models. I am especially interested in when training teaches a model
+			to report something other than what it has computed, and in label-free ways to detect when its
+			reasoning goes wrong. With Alexei Oblomkov, I showed that whether verifiable-reward RL makes a
+			model honest or teaches it to bluff is predicted by a simple threshold measured before training.
+			I also introduced operadic consistency, a label-free signal for compositional reasoning failures.
+			I am principal investigator of &ldquo;An Operad-Based Framework for Deep Learning,&rdquo; an award
+			from DARPA's
 			<a href="https://www.darpa.mil/research/programs/aiq-artificial-intelligence-quantified">AIQ program</a>,
-			which I run through my research company, Incubilate.
-			My recent work introduced operadic consistency, a label-free signal for detecting when an
-			LLM's multi-step reasoning goes wrong.</p>
+			which I run through my research company, Incubilate.</p>
 			<p>Before moving to machine learning, I led a research group at the Max Planck Institute for
 			Mathematics in Bonn (2021&ndash;2025). Earlier I held positions at the University of Southern
 			California and, as an NSF Postdoctoral Fellow, at the Institute for Advanced Study and Princeton.
@@ -105,7 +108,9 @@
 	<h2 id="news">News</h2>
 	<ul class="news">
 		<li><span class="when">Nov 2026</span>
-		<span>New blog post: <a href="/blog/honesty-is-a-race/">Honesty is a race: when reinforcement learning teaches a model to bluff</a>.</span></li>
+		<span>New preprint with Alexei Oblomkov,
+		&ldquo;Honesty is a race: predicting when verifiable-reward RL teaches a model to bluff,&rdquo;
+		and an accompanying <a href="/blog/honesty-is-a-race/">blog post</a>.</span></li>
 		<li><span class="when">Oct 2026</span>
 		<span>New blog post: <a href="/blog/operadic-consistency/">Checking a model&rsquo;s work without an answer key</a>.</span></li>
 		<li><span class="when">Sep 2026</span>
@@ -127,16 +132,29 @@
 	</ul>
 
 	<h2 id="research">Research</h2>
-	<p>My current focus is on using operads, the mathematics of many-in, one-out operations and
-	their compositions, to describe, measure, and improve compositional reasoning in LLMs.
-	Our main empirical finding is that operadic consistency, which checks a model's direct answer
-	against the answer it builds from its own decomposition of the question, tracks accuracy with
-	correlation 0.86 to 0.94 across twelve LLMs from 4B to 671B parameters, and improves selective
-	prediction over a tuned self-consistency baseline at equal inference cost.
+	<p>My current work has two threads. The first is reinforcement learning from verifiable rewards.
+	When a reward pays a verdict that a checker cannot verify, GRPO training can teach a model to bluff.
+	We derive a first-order threshold that predicts, from the model's success rate before RL, whether
+	honesty survives. We test it on Datalog, two code models, and abstention on grade-school math, and
+	no run above the threshold ends collapsed. On Datalog, when honesty does collapse, a linear probe
+	fit before RL still reads the truth.
+	The second thread is label-free evaluation: operadic consistency, which checks a model's direct
+	answer against the answer it builds from its own decomposition of the question, tracks accuracy
+	with correlation 0.86 to 0.94 across twelve LLMs and improves selective prediction over tuned
+	self-consistency at equal cost.
 	Before machine learning I worked in symplectic geometry and polytopal combinatorics.
 	Click &ldquo;abstract&rdquo; to expand any abstract.</p>
 
 	<h3 class="subhead">Machine learning</h3>
+
+	<div class="pub">
+		<div class="pub-title"><span class="num">23.</span> Honesty is a race: predicting when verifiable-reward RL teaches a model to bluff (2026)</div>
+		<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Alexei Oblomkov</div>
+		<div class="pub-venue">arXiv (forthcoming), <a href="/blog/honesty-is-a-race/">blog post</a></div>
+		<details class="abs"><summary>abstract</summary>
+		<p>Two rewards with the same expected payoff at the start of training can end a reinforcement-learning run in opposite places, with an honest model or one that bluffs. We study rewards that pay \(b\) for a verdict that a checker cannot verify (&ldquo;this program is correct&rdquo;) and \(r\) for a certificate that it accepts (an input revealing a bug). To first order, a GRPO step makes the model more honest exactly when \(\tilde{p}\, r/b > 1 + \kappa\). Here \(\tilde{p}\) is the rate at which the checker accepts the model&rsquo;s certificates, weighted toward the items on which the model still gives both verdicts, and \(\kappa\) is the pull of the items on which the unverifiable verdict is right. Both terms move during training. A checker raises \(\tilde{p}\), so near the threshold honesty is a race, which a run just below the threshold can win and a run under a lottery with the same starting payoff cannot. The term \(\kappa\) starts large and falls as the other items settle, so a run just above the threshold first dips toward bluffing, on code nearly to zero, before climbing back. The pull also acts in the other direction, and this predicts a ceiling, above which the model starts giving the honest verdict where it is wrong. On propositional Datalog, two code models, and abstention on grade-school math, with \(p\) the model&rsquo;s acceptance rate before RL, no run above \(pr/b = 1\) ends collapsed, and checked runs can survive slightly below it. At \(pr/b = 3\), above the ceiling, both code models call about half of correct programs buggy. On depth-3 Datalog, training generously under the checker and then cutting the payoff keeps the model at least 67% honest in three seeds, at a ratio where the same model trained from the start falls to 4&ndash;15% and is at most 47% honest after 160 steps. On depth-2 Datalog, when honesty collapses, a linear probe fit before RL still reads the truth.</p>
+		</details>
+	</div>
 
 	<div class="pub">
 		<div class="pub-title"><span class="num">22.</span> <a href="https://arxiv.org/abs/2606.13649">Operadic consistency: a label-free signal for compositional reasoning failures in LLMs</a> (2026)</div>
