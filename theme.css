@@ -19,7 +19,10 @@ html[data-theme="dark"] h2 { color: #f1f1ef; }
 
 /* homepage and blog index */
 html[data-theme="dark"] h2 { border-bottom-color: #2f3136; }
-html[data-theme="dark"] h3.subhead { color: #c2c1bd; }
+html[data-theme="dark"] h3.subhead,
+html[data-theme="dark"] details.math > summary { color: #c2c1bd; }
+html[data-theme="dark"] details.math > summary:hover { color: #6aabf2; }
+html[data-theme="dark"] details.math > summary::before { color: #6aabf2; }
 html[data-theme="dark"] .hero-email,
 html[data-theme="dark"] .note,
 html[data-theme="dark"] ul.news .when,

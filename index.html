@@ -59,6 +59,15 @@
 		details.abs summary::before { content: "\25B8\00A0"; }
 		details.abs[open] summary::before { content: "\25BE\00A0"; }
 		details.abs p { font-size: 15px; color: #555; margin: 6px 0 0; padding-left: 14px; border-left: 2px solid #e8eaed; }
+		details.math { margin-top: 30px; }
+		details.math > summary {
+			cursor: pointer; list-style: none; user-select: none;
+			font-size: 18px; font-weight: 600; color: #444;
+		}
+		details.math > summary::-webkit-details-marker { display: none; }
+		details.math > summary::before { content: "\25B8\00A0"; color: #1772d0; }
+		details.math[open] > summary::before { content: "\25BE\00A0"; }
+		details.math > summary:hover { color: #1772d0; }
 		.footer { margin-top: 60px; font-size: 14px; color: #767676; border-top: 1px solid #eee; padding-top: 16px; }
 		@media (max-width: 640px) {
 			.hero { flex-direction: column-reverse; }
@@ -147,7 +156,7 @@
 	answer against the answer it builds from its own decomposition of the question, tracks accuracy
 	with correlation 0.86 to 0.94 across twelve LLMs and improves selective prediction over tuned
 	self-consistency at equal cost.
-	Before machine learning I worked in symplectic geometry and polytopal combinatorics.
+	Before machine learning I worked in symplectic geometry and polytopal combinatorics; those papers are collapsed below.
 	Click &ldquo;abstract&rdquo; to expand any abstract.</p>
 
 	<h3 class="subhead">Machine learning</h3>
@@ -190,6 +199,9 @@
 		We consider several different regularizers, including weight decay, and study for which regularizers the regularized function \(L_\epsilon\) becomes Morse.</p>
 		</details>
 	</div>
+
+	<details class="math">
+	<summary>Mathematics (19 papers)</summary>
 
 	<h3 class="subhead">Symplectic geometry and combinatorics</h3>
 	<div class="note">* = undergraduate mentee, ** = postdoctoral mentee</div>
@@ -406,6 +418,8 @@
 		An additional argument allows us to conclude the completeness of the associated eigenfunctions.</p>
 		</details>
 	</div>
+
+	</details>
 
 	<div class="footer">
 		Last updated November 2026.
