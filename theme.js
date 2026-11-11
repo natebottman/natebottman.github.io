@@ -1,4 +1,4 @@
-// Light/dark toggle. Dark is the default; a choice made with the button is remembered.
+// Light/dark toggle. The default follows the system setting; a choice made with the button is remembered.
 (function () {
 	var root = document.documentElement;
 	function current() { return root.getAttribute('data-theme') === 'light' ? 'light' : 'dark'; }
