@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script>(function(){var t;try{t=localStorage.getItem('theme')}catch(e){}document.documentElement.setAttribute('data-theme',t==='light'?'light':'dark')})();</script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="canonical" href="https://natebottman.com/">
@@ -30,7 +31,7 @@
 		.hero { display: flex; gap: 40px; align-items: flex-start; }
 		.hero-text { flex: 1; }
 		h1 { font-size: 34px; font-weight: 400; margin: 0 0 18px; color: #000; }
-		.hero-photo { width: 200px; flex-shrink: 0; text-align: center; }
+		.hero-photo { width: 232px; flex-shrink: 0; text-align: center; }
 		.hero-photo img { width: 175px; height: 175px; border-radius: 50%; object-fit: cover; }
 		.hero-links { margin-top: 14px; font-size: 15px; }
 		.hero-links a { white-space: nowrap; }
@@ -66,6 +67,8 @@
 			ul.news .when { display: block; }
 		}
 	</style>
+<link rel="stylesheet" href="/theme.css">
+<script src="/theme.js" defer></script>
 	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
 </head>
 
@@ -95,6 +98,7 @@
 			<img src="pics/headshot.jpg" alt="Nathaniel Bottman">
 			<div class="hero-links">
 				<a href="docs/nathaniel_bottman_resume.pdf">Resume</a> &nbsp;/&nbsp;
+				<a href="docs/cv.pdf">CV</a> &nbsp;/&nbsp;
 				<a href="https://scholar.google.com/citations?user=EftJ_I8AAAAJ">Scholar</a> &nbsp;/&nbsp;
 				<a href="https://arxiv.org/a/bottman_n_1">arXiv</a><br>
 				<a href="blog/">Blog</a> &nbsp;/&nbsp;
@@ -242,7 +246,7 @@
 	<div class="pub">
 		<div class="pub-title"><span class="num">14.</span> <a href="https://arxiv.org/abs/2208.14529">Constrainahedra</a> (2022)</div>
 		<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Daria Poliakova**</div>
-		<div class="pub-venue">Submitted, 17pp.</div>
+		<div class="pub-venue">arXiv:2208.14529, 17pp.</div>
 		<details class="abs"><summary>abstract</summary>
 		<p>We define a family of convex polytopes called constrainahedra, which index collisions of horizontal and vertical lines. Our construction proceeds by first defining a poset \(C(m,n)\) of good rectangular preorders, then proving that \(C(m,n)\) is a lattice, and finally constructing a polytopal realization by taking the convex hull of a certain explicitly-defined collection of points. The constrainahedra will form the combinatorial backbone of the second author's construction of strong homotopy duoids. We indicate how constrainahedra could be realized as Gromov-compactified configuration spaces of horizontal and vertical lines; viewed from this perspective, the constrainahedra include naturally into the first author's notion of 2-associahedra.</p>
 		</details>
@@ -251,7 +255,7 @@
 	<div class="pub">
 		<div class="pub-title"><span class="num">13.</span> <a href="https://arxiv.org/abs/1910.02037">A compactification of the moduli space of marked vertical lines in \(\mathbb{C}^2\)</a> (2019)</div>
 		<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Alexei Oblomkov</div>
-		<div class="pub-venue">42pp, submitted to <i>Advances in Mathematics</i>, revision in preparation in response to referee report</div>
+		<div class="pub-venue">arXiv:1910.02037, 42pp.</div>
 		<details class="abs"><summary>abstract</summary>
 		<p>For \(r \geq 1\) and \(\mathbf{n} \in \mathbb{Z}_{\geq0}^r\setminus\{\mathbf{0}\}\), we construct a proper complex variety \(\overline{2M}_{\mathbf{n}}\). \(\overline{2M}_{\mathbf{n}}\) is locally toric, and it is equipped with a forgetful map \(\overline{2M}_{\mathbf{n}} \to \overline M_{0,r+1}\). This space is a compactification of \(2M_{\mathbf{n}}\), the configuration space of marked vertical lines in \(\mathbb{C}^2\) up to translations and dilations. In the appendices, we give several examples and show how the stratification of \(\overline{2M}_{\mathbf{n}}\) can be used to recursively compute its virtual Poincar&eacute; polynomial.</p>
 		</details>
@@ -403,7 +407,7 @@
 	</div>
 
 	<div class="footer">
-		Last updated September 2026.
+		Last updated November 2026.
 	</div>
 
 </div>

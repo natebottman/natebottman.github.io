@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script>(function(){var t;try{t=localStorage.getItem('theme')}catch(e){}document.documentElement.setAttribute('data-theme',t==='light'?'light':'dark')})();</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="A label-free check on whether a language model's answer is supported by its own step-by-step reasoning: ask the question two ways and compare.">
@@ -95,6 +96,8 @@
     .toc a.active { color: #000; border-left-color: #1772d0; }
   }
 </style>
+<link rel="stylesheet" href="/theme.css">
+<script src="/theme.js" defer></script>
 <script>window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] } };</script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" id="MathJax-script" async></script>
 </head>
