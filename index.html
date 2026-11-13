@@ -123,7 +123,7 @@
 	<ul class="news">
 		<li><span class="when">Nov 2026</span>
 		<span>New preprint with Alexei Oblomkov,
-		&ldquo;Honesty is a race: predicting when verifiable-reward RL teaches a model to bluff,&rdquo;
+		&ldquo;<a href="https://arxiv.org/abs/2611.15779">Honesty is a race: predicting when verifiable-reward RL teaches a model to bluff</a>,&rdquo;
 		and an accompanying <a href="/blog/honesty-is-a-race/">blog post</a>.</span></li>
 		<li><span class="when">Oct 2026</span>
 		<span>New blog post: <a href="/blog/operadic-consistency/">Checking a model&rsquo;s work without an answer key</a>.</span></li>
@@ -162,9 +162,9 @@
 	<h3 class="subhead">Machine learning</h3>
 
 	<div class="pub">
-		<div class="pub-title"><span class="num">23.</span> Honesty is a race: predicting when verifiable-reward RL teaches a model to bluff (2026)</div>
+		<div class="pub-title"><span class="num">23.</span> <a href="https://arxiv.org/abs/2611.15779">Honesty is a race: predicting when verifiable-reward RL teaches a model to bluff</a> (2026)</div>
 		<div class="pub-authors"><span class="me">Nathaniel Bottman</span>, Alexei Oblomkov</div>
-		<div class="pub-venue">arXiv (forthcoming), <a href="/blog/honesty-is-a-race/">blog post</a></div>
+		<div class="pub-venue">arXiv:2611.15779, <a href="/blog/honesty-is-a-race/">blog post</a></div>
 		<details class="abs"><summary>abstract</summary>
 		<p>Two rewards with the same expected payoff at the start of training can end a reinforcement-learning run in opposite places, with an honest model or one that bluffs. We study rewards that pay \(b\) for a verdict that a checker cannot verify (&ldquo;this program is correct&rdquo;) and \(r\) for a certificate that it accepts (an input revealing a bug). To first order, a GRPO step makes the model more honest exactly when \(\tilde{p}\, r/b > 1 + \kappa\). Here \(\tilde{p}\) is the rate at which the checker accepts the model&rsquo;s certificates, weighted toward the items on which the model still gives both verdicts, and \(\kappa\) is the pull of the items on which the unverifiable verdict is right. Both terms move during training. A checker raises \(\tilde{p}\), so near the threshold honesty is a race, which a run just below the threshold can win and a run under a lottery with the same starting payoff cannot. The term \(\kappa\) starts large and falls as the other items settle, so a run just above the threshold first dips toward bluffing, on code nearly to zero, before climbing back. The pull also acts in the other direction, and this predicts a ceiling, above which the model starts giving the honest verdict where it is wrong. On propositional Datalog, two code models, and abstention on grade-school math, with \(p\) the model&rsquo;s acceptance rate before RL, no run above \(pr/b = 1\) ends collapsed, and checked runs can survive slightly below it. At \(pr/b = 3\), above the ceiling, both code models call about half of correct programs buggy. On depth-3 Datalog, training generously under the checker and then cutting the payoff keeps the model at least 67% honest in three seeds, at a ratio where the same model trained from the start falls to 4&ndash;15% and is at most 47% honest after 160 steps. On depth-2 Datalog, when honesty collapses, a linear probe fit before RL still reads the truth.</p>
 		</details>
